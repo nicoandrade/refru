@@ -329,15 +329,15 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/header-component.php:22, template-parts/header-component.php:42
+#: template-parts/header-component.php:22, template-parts/header-component.php:41
 msgid "Menu"
 msgstr ""
 
-#: template-parts/header-component.php:49
+#: template-parts/header-component.php:48
 msgid "Main Menu"
 msgstr ""
 
-#: template-parts/header-component.php:75, inc/woocommerce/woocommerce-support.php:72
+#: template-parts/header-component.php:74, inc/woocommerce/woocommerce-support.php:72
 msgid "Cart (%s)"
 msgstr ""
 
@@ -752,18 +752,6 @@ msgstr ""
 
 #: inc/theme-functions/demo-import-data.php:14
 msgid "Click on \"Import Demo Data\" to start importing. Images were replaced by a placeholder to avoid long waits."
-msgstr ""
-
-#: inc/theme-functions/meta-boxes-registration.php:9
-msgid "Page Options"
-msgstr ""
-
-#: inc/theme-functions/meta-boxes-registration.php:13
-msgid "Show Title"
-msgstr ""
-
-#: inc/theme-functions/meta-boxes-registration.php:23
-msgid "Header Margin"
 msgstr ""
 
 #: inc/theme-functions/retina-logo.php:103

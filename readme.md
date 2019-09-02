@@ -1,35 +1,36 @@
-# Refru 
+# Refru
+
 **Contributors:** nicoandrade  
 **Author:** Quema Labs  
 **Tags:** e-commerce, blog, featured-images, two-columns, threaded-comments, custom-menu, left-sidebar, sticky-post, translation-ready, custom-background, full-width-template, rtl-language-support, theme-options  
 **Requires at least:** 4.9.6  
-**Tested up to:** WordPress 5.0.3  
+**Tested up to:** WordPress 5.2.2  
 **Stable tag:** 1.0.0  
 Requires PHP: 5.6  
 **License:** GPLv2 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
 Refru is a beautiful premium theme, perfect for small business.
 
+## Description
 
-## Description 
 Refru is a beautiful premium theme, perfect for small business.
 
+## Installation
 
-## Installation 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+## Changelog
 
-## Changelog 
+#### 1.0.0 - 02/09/2019
 
-#### 1.0.0 - Developing... 
-* Initial Release
+-   Initial Release
 
+## Resources
 
-## Resources 
-Underscores 
+Underscores
 (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 **Source:** http://underscores.me/
 
