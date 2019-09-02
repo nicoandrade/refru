@@ -1,0 +1,546 @@
+html {
+    font-size: 1em;
+}
+
+body.refru-header-sticky {
+    padding-top: 54px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ebebeb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+Site wrap
+-------------------------------------------- */
+.refru-site-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+/*
+Preloader
+-------------------------------------------- */
+.refru-preloader {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: block;
+    z-index: 50;
+    transition: opacity 200ms ease-in-out, transform 900ms 400ms;
+    text-align: center;
+    color: $gray-500 !important;
+    border-radius: 4px;
+
+    &.proloader_hide,
+    .pace-done & {
+        //z-index: -10;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .refru-folding-cube {
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+    }
+
+    .refru-folding-cube .refru-cube {
+        float: left;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .refru-folding-cube .refru-cube:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        -webkit-animation: refru-foldCubeAngle 2.4s infinite linear both;
+        animation: refru-foldCubeAngle 2.4s infinite linear both;
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
+
+    .refru-folding-cube .refru-cube2 {
+        -webkit-transform: scale(1.1) rotateZ(90deg);
+        transform: scale(1.1) rotateZ(90deg);
+    }
+
+    .refru-folding-cube .refru-cube3 {
+        -webkit-transform: scale(1.1) rotateZ(180deg);
+        transform: scale(1.1) rotateZ(180deg);
+    }
+
+    .refru-folding-cube .refru-cube4 {
+        -webkit-transform: scale(1.1) rotateZ(270deg);
+        transform: scale(1.1) rotateZ(270deg);
+    }
+
+    .refru-folding-cube .refru-cube2:before {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .refru-folding-cube .refru-cube3:before {
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+
+    .refru-folding-cube .refru-cube4:before {
+        -webkit-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+    }
+
+    @-webkit-keyframes refru-foldCubeAngle {
+        0%,
+        10% {
+            -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+            opacity: 0;
+        }
+
+        25%,
+        75% {
+            -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+            opacity: 1;
+        }
+
+        90%,
+        100% {
+            -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes refru-foldCubeAngle {
+        0%,
+        10% {
+            -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+            opacity: 0;
+        }
+
+        25%,
+        75% {
+            -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+            opacity: 1;
+        }
+
+        90%,
+        100% {
+            -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+
+    .refru-spinner {
+        width: 40px;
+        height: 40px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .refru-double-bounce1,
+    .refru-double-bounce2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $primary;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        -webkit-animation: sk-bounce 2s infinite ease-in-out;
+        animation: sk-bounce 2s infinite ease-in-out;
+    }
+
+    .refru-double-bounce2 {
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+    }
+
+    @-webkit-keyframes sk-bounce {
+        0%,
+        100% {
+            -webkit-transform: scale(0);
+        }
+
+        50% {
+            -webkit-transform: scale(1);
+        }
+    }
+
+    @keyframes sk-bounce {
+        0%,
+        100% {
+            transform: scale(0);
+            -webkit-transform: scale(0);
+        }
+
+        50% {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+    }
+}
+
+/*
+Shadow Big
+-------------------------------------------- */
+.refru-shadow-big {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07), 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.refru-shadow-big-hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07), 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 200ms;
+
+    .no-touchevents &:hover {
+        box-shadow: 0 9px 20px rgba(0, 0, 0, 0.07),
+            0 20px 45px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/*
+Refru button
+-------------------------------------------- */
+.refru-button {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: $btn-border-width solid transparent;
+    background-color: $secondary;
+    color: #fff;
+    min-width: 9.6875rem;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.11), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+    -moz-osx-font-smoothing: grayscale;
+    /* Firefox */
+    -webkit-font-smoothing: antialiased;
+    /* WebKit  */
+    margin-right: 15px;
+    text-decoration: none;
+
+    @include button-size(
+        0.625rem,
+        1.875rem,
+        $font-size-base,
+        $btn-line-height,
+        $btn-border-radius
+    );
+
+    @include hover-focus {
+        text-decoration: none;
+        background-color: darken($secondary, 5);
+        box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+
+    &:focus,
+    &.focus {
+        outline: 0;
+        box-shadow: $btn-focus-box-shadow;
+    }
+
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+        opacity: $btn-disabled-opacity;
+        @include box-shadow(none);
+    }
+
+    // Opinionated: add "hand" cursor to non-disabled .btn elements
+    &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        background-image: none;
+        @include box-shadow($btn-active-box-shadow);
+
+        &:focus {
+            @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+        }
+    }
+
+    &.refru-button-style-2 {
+        box-shadow: none;
+        position: relative;
+
+        // &::after{
+        // 	position: absolute;
+        // 	top: 0;
+        // 	bottom: 0;
+        // 	right: 0;
+        // 	left: 0;
+        // 	content: "";
+        // 	background-color: rgba(0,0,0,0.04);
+        // 	opacity: 0;
+        // 	transition: opacity 200ms ease-in-out;
+        // }
+
+        @include hover-focus {
+            box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.15);
+            background-color: var(--refru-button-hover) !important;
+            color: var(--refru-button-text-hover) !important;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &.refru-button-style-3 {
+        box-shadow: none;
+        border-width: 1px;
+        border-style: solid;
+
+        @include hover-focus {
+            box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &.refru-button-style-4 {
+        border-radius: 100px;
+
+        @include hover-focus {
+            color: var(--refru-button-text-hover) !important;
+        }
+    }
+}
+
+.refru-button-secondary {
+    @extend .refru-button;
+    background-color: #f8f8f8;
+    color: $gray-600;
+
+    @include hover-focus {
+        background-color: darken(#f8f8f8, 3);
+        color: $gray-700;
+    }
+}
+
+.refru-button-tertiary {
+    @extend .refru-button;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: $gray-600;
+
+    @include hover-focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $gray-700;
+    }
+}
+
+/*
+Hero Button
+-------------------------------------------- */
+.refru-btn-hero {
+    display: inline-block;
+    background-color: $primary;
+    color: #fff;
+    padding: 15px 33px;
+    border-radius: 3px;
+    border: none;
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: box-shadow 500ms, background 200ms;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    .no-touchevents &:hover {
+        text-decoration: none !important;
+        background-color: darken($primary, 4%);
+        color: #fff;
+    }
+
+    &:active,
+    &:focus {
+        position: relative;
+        bottom: -1px;
+        text-decoration: none;
+    }
+}
+
+/*
+Button Transparent
+-------------------------------------------- */
+.refru-btn-transparent {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 33px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: box-shadow 500ms, background 200ms, border 200ms;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    i {
+        margin-right: 10px;
+    }
+
+    .no-touchevents &:hover {
+        text-decoration: none !important;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    &:active,
+    &:focus {
+        position: relative;
+        bottom: -1px;
+        text-decoration: none;
+    }
+}
+
+/*
+Responsive Videos
+-------------------------------------------- */
+.refru-responsive-video {
+    height: 0;
+    padding-bottom: 56.2%;
+    position: relative;
+
+    iframe {
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/*
+Bounce Animation
+-------------------------------------------- */
+.refru-double-bounce1,
+.refru-double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2s infinite ease-in-out;
+    animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.refru-double-bounce2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/*
+Inputs
+-------------------------------------------- */
+input,
+textarea {
+    display: block;
+    width: 100%;
+    height: 42px;
+    border-radius: 3px;
+    margin-bottom: 0.71428571428571em;
+    border: 1px solid $gray-300;
+    transition: all 300ms;
+    box-shadow: none;
+    color: $gray-600;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+
+    &:focus {
+        box-shadow: none;
+        border: 1px solid $gray-700;
+    }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+textarea {
+    min-height: 100px;
+}

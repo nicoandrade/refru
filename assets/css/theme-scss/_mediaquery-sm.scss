@@ -1,0 +1,102 @@
+@include media-breakpoint-only(sm) {
+    /* ACASM */
+    /*
+	Header
+	==========================================
+	*/
+    #header {
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        // Header Absolute
+        .refru-header-absolute & {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        // Header 1
+        &.refru-header-style-1 {
+            .refru-logo-wrap {
+                order: 1;
+                flex-basis: 50%;
+            }
+
+            .refru-main-nav-wrap {
+                display: block;
+                order: 5;
+                flex-basis: 100%;
+                text-align: left;
+            }
+
+            .refru-icons-nav-wrap {
+                display: block;
+                order: 2;
+                flex-basis: 50%;
+                text-align: right;
+                margin-left: 0;
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .logo_container {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        margin-top: 15px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            border-bottom: 1px solid $gray-400;
+        }
+    }
+
+    .logo_container {
+        text-align: center;
+    }
+
+    #header {
+        .nav-wrapper {
+            text-align: center;
+        }
+    }
+
+    .refru-cart-btn {
+        padding: 12px 18px;
+    }
+
+    .refru-header-1 #header .refru-cart-btn.cart-empty {
+        padding: 14px 18px;
+    }
+
+    /*
+	Cart
+	==========================================
+	*/
+    .woocommerce-cart .cart .cart_item {
+        width: 31%;
+    }
+
+    .woocommerce-cart #content form {
+        width: 100%;
+        display: block;
+    }
+
+    .woocommerce-cart #content .cart-collaterals {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+}

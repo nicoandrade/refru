@@ -1,0 +1,28 @@
+// Variables
+@import "variables";
+@import "mixins";
+
+/*!
+ * Bootstrap (https://getbootstrap.com/)
+ */
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "vendor/bootstrap/root";
+@import "vendor/bootstrap/reboot";
+@import "vendor/bootstrap/type";
+@import "vendor/bootstrap/code";
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/tables";
+@import "vendor/bootstrap/utilities";
+
+// Font Awesome Free
+$fa-font-path: "assets/css/vendor/fontawesome-free/webfonts";
+@import "vendor/fontawesome-free/scss/fontawesome.scss";
+@import "vendor/fontawesome-free/scss/regular.scss";
+@import "vendor/fontawesome-free/scss/solid.scss";
+@import "vendor/fontawesome-free/scss/brands.scss";
+
+// Quema Labs Icon Font
+$ql-font-path: "assets/css/vendor/quemalabs-font/fonts";
+@import "vendor/quemalabs-font/style.scss";

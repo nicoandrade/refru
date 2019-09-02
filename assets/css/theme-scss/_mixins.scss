@@ -1,0 +1,187 @@
+/* Quema Labs Font
+-------------------------------------------------- */
+@mixin ql-font {
+    font-family: "quemalabs-font" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hero Button
+-------------------------------------------------- */
+@mixin refru-btn-hero($background-color: #2e2e2e) {
+    display: inline-block;
+    background-color: $background-color;
+    color: #fff;
+    padding: 15px 33px;
+    border-radius: 3px;
+    border: none;
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: box-shadow 500ms, background 200ms;
+
+    .no-touchevents &:hover {
+        text-decoration: none !important;
+        background-color: darken($background-color, 5%);
+        color: #fff;
+    }
+
+    &:active,
+    &:focus {
+        position: relative;
+        bottom: -1px;
+        text-decoration: none;
+    }
+}
+
+@mixin refru-btn-hero-inverted {
+    @include refru-btn-hero;
+    background-color: #fff;
+    color: #000;
+
+    .no-touchevents &:hover {
+        background-color: darken(#fff, 4%);
+        color: #000;
+    }
+}
+
+/* Hero Buy Button
+-------------------------------------------------- */
+@mixin refru-btn-hero-buy($background-color: #fff200) {
+    display: inline-block;
+    background-color: $background-color;
+    padding: 17px 45px;
+    border-radius: 30px;
+    border: none;
+    color: #000;
+    text-shadow: none;
+    text-transform: uppercase;
+    max-width: 100%;
+
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: box-shadow 500ms, background 200ms;
+
+    .no-touchevents &:hover {
+        text-decoration: none !important;
+        background-color: darken($background-color, 4%);
+        color: #000;
+    }
+
+    &:active,
+    &:focus {
+        position: relative;
+        bottom: -1px;
+        text-decoration: none;
+    }
+}
+
+/* Main Background													
+/*----------------------------------------------------------------------*/
+@mixin refru-background {
+    background-color: rgba(0, 0, 0, 0.85);
+    @extend .refru-shadow-big;
+
+    @at-root .refru-light-background & {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    @at-root .refru-light-background#{&} {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+/* 
+Animations
+=====================================================*/
+
+/* Top to Bottom													
+/*----------------------------------------------------------------------*/
+@mixin refru-animation-top-to-bottom(
+    $transition-delay: 0,
+    $translate: -40px,
+    $duration: 900ms,
+    $opacity-end: 1,
+    $opacity-start: 0
+) {
+    opacity: $opacity-start;
+    transition: transform $duration cubic-bezier(0.075, 0.82, 0.165, 1),
+        opacity $duration;
+    transform: translate(0, $translate);
+    transition-delay: $transition-delay;
+
+    @at-root .pace-done#{&} {
+        opacity: $opacity-end;
+        transform: translate(0, 0);
+    }
+}
+
+/* Bottom to Top
+/*----------------------------------------------------------------------*/
+@mixin refru-animation-bottom-to-top(
+    $transition-delay: 0,
+    $translate: 40px,
+    $duration: 900ms,
+    $opacity-end: 1,
+    $opacity-start: 0
+) {
+    opacity: $opacity-start;
+    transition: transform $duration cubic-bezier(0.075, 0.82, 0.165, 1),
+        opacity $duration;
+    transform: translate(0, $translate);
+    transition-delay: $transition-delay;
+
+    @at-root .pace-done#{&} {
+        opacity: $opacity-end;
+        transform: translate(0, 0);
+    }
+}
+
+/* Left to Right
+/*----------------------------------------------------------------------*/
+@mixin refru-animation-left-to-right(
+    $transition-delay: 0,
+    $translate: -40px,
+    $duration: 900ms,
+    $opacity-end: 1,
+    $opacity-start: 0
+) {
+    opacity: $opacity-start;
+    transition: transform $duration cubic-bezier(0.075, 0.82, 0.165, 1),
+        opacity $duration;
+    transform: translate($translate, 0);
+    transition-delay: $transition-delay;
+
+    @at-root .pace-done#{&} {
+        opacity: $opacity-end;
+        transform: translate(0, 0);
+    }
+}
+
+/* Right to Left
+/*----------------------------------------------------------------------*/
+@mixin refru-animation-right-to-left(
+    $transition-delay: 0,
+    $translate: 40px,
+    $duration: 900ms,
+    $opacity-end: 1,
+    $opacity-start: 0
+) {
+    opacity: $opacity-start;
+    transition: transform $duration cubic-bezier(0.075, 0.82, 0.165, 1),
+        opacity $duration;
+    transform: translate($translate, 0);
+    transition-delay: $transition-delay;
+
+    @at-root .pace-done#{&} {
+        opacity: $opacity-end;
+        transform: translate(0, 0);
+    }
+}

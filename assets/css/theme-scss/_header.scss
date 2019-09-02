@@ -1,0 +1,472 @@
+/*
+==========================================
+Header
+** Here is the general layout for the header
+==========================================
+*/
+#header {
+    position: relative;
+    z-index: 10;
+    transition: padding 200ms;
+    padding: 0 5%;
+    background-position: center;
+    background-size: cover;
+    //margin-bottom: 1.875em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; // vertically
+    background-color: #151515;
+
+    // Header Absolute
+    .refru-header-absolute & {
+        position: absolute;
+    }
+
+    // Logo Wrap
+    .refru-logo-wrap {
+        margin: 7px 0;
+        line-height: 0;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .site-title {
+            margin: 0;
+            display: inline-block;
+            font-size: 1.375rem;
+            line-height: 0;
+
+            .ql_logo {
+                color: #fff;
+                font-size: 1.375rem;
+                line-height: 22px;
+                font-weight: bold;
+                transition: all 400ms ease-in-out;
+                display: inline-block;
+                padding: 7px 0;
+                position: relative;
+                z-index: 4;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            img.lazyload {
+                max-height: 30px;
+            }
+        }
+    }
+
+    // Main Navigation Wrap
+    .refru-main-nav-wrap {
+        flex-grow: 2;
+        text-align: right;
+
+        .navbar-collapse {
+            padding: 0;
+        }
+    }
+
+    .refru-icons-nav-wrap {
+        //flex-grow: 1;
+        flex-basis: fit-content;
+        position: relative;
+        margin-left: 10px;
+        padding-left: 10px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 1px;
+            height: 25px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            li {
+                display: inline-block;
+
+                a {
+                    padding: 1.125em 1.125em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: inherit;
+
+                    .no-touchevents &:hover {
+                        text-decoration: none;
+                        color: $gray-700;
+                    }
+
+                    i {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .refru-nav-btn-wrap {
+        display: none;
+
+        .refru-nav-btn {
+            background-color: transparent;
+            border: none;
+            padding: 15px 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .no-touchevents &:hover {
+                color: $gray-700;
+            }
+
+            i {
+                font-size: 1.25rem;
+                color: $gray-500;
+            }
+        }
+    }
+
+    // Search Form
+    .refru-woo-search-form-wrap {
+        display: none;
+        display: inline-flex;
+        align-items: center;
+
+        .woocommerce-product-search {
+            position: relative;
+
+            &:focus {
+                &::before {
+                    display: none;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 11px;
+                @include ql-font;
+                content: "\e922";
+                transform: translateY(-50%);
+                font-size: 0.875rem;
+                pointer-events: none;
+                color: #fff;
+                opacity: 0.5;
+            }
+
+            .search-field {
+                background-color: rgba(255, 255, 255, 0.07);
+                border: none;
+                box-shadow: none;
+                border-radius: 50px;
+                outline: none;
+                padding: 0 15px;
+                margin-bottom: 0;
+                width: 36px;
+                height: 36px;
+                transform: width;
+                font-size: 0.8125rem;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    width: 230px;
+                    max-width: 100%;
+                    padding-left: 35px;
+                    background-color: rgba(255, 255, 255, 0.12);
+
+                    &::-webkit-input-placeholder {
+                        color: rgba(255, 255, 255, 0.4);
+                    }
+                    &:-moz-placeholder {
+                        color: rgba(255, 255, 255, 0.4);
+                    }
+                    &::-moz-placeholder {
+                        color: rgba(255, 255, 255, 0.4);
+                    }
+                    &:-ms-input-placeholder {
+                        color: rgba(255, 255, 255, 0.4);
+                    }
+                }
+
+                &::-webkit-input-placeholder {
+                    color: transparent;
+                }
+                &:-moz-placeholder {
+                    color: transparent;
+                }
+                &::-moz-placeholder {
+                    color: transparent;
+                }
+                &:-ms-input-placeholder {
+                    color: transparent;
+                }
+            }
+
+            button[type="submit"] {
+                display: none;
+            }
+        }
+    }
+
+    &.refru-fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+#header .container {
+    position: relative;
+}
+
+.refru-logo-wrap .custom-logo-link {
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+
+/*
+==========================================
+Header Widget Area
+==========================================
+*/
+.header-widget-area {
+    font-size: 1rem;
+
+    .widget {
+        margin-top: 40px;
+
+        ul,
+        ol {
+            margin-left: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+
+            li {
+                border-bottom: rgba(0, 0, 0, 0.08) 1px solid;
+                padding: 7px 0;
+            }
+
+            ul,
+            ol {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    /*
+		Recent Comments Widget
+		--------------------------------
+		*/
+    .widget_recent_comments ul#recentcomments {
+        margin-top: 17px;
+    }
+
+    .widget_recent_comments ul li {
+        padding-left: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        border: none;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .widget_recent_comments ul li::before {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 14px;
+    }
+
+    .widget_recent_comments ul li a {
+        display: inline;
+        background: none;
+        padding: 0;
+    }
+
+    .widget_recent_comments ul li a:hover {
+        background: none;
+    }
+
+    .rsswidget {
+        color: inherit;
+    }
+
+    .widget #menu-social li {
+        border: none;
+    }
+}
+
+/*
+Search Button
+---------------------------------------*/
+.menu_wrap .search-form {
+    color: #fff;
+
+    label {
+        margin-bottom: 0;
+    }
+
+    label::before {
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .search-field {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        margin-bottom: 0;
+        height: 39px;
+        border-radius: 0;
+        color: #fff;
+        transition: all 300ms;
+        width: 0;
+        float: right;
+        padding: 0;
+    }
+
+    .search-field:focus {
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: none;
+        width: 100%;
+        padding: 6px 40px 6px 12px;
+    }
+
+    .search-field::-webkit-input-placeholder {
+        color: #acacac;
+    }
+
+    .search-field:-moz-placeholder {
+        /* Firefox 18- */
+        color: #acacac;
+    }
+
+    .search-field::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #acacac;
+    }
+
+    .search-field:-ms-input-placeholder {
+        color: #acacac;
+    }
+
+    .search-submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 39px;
+        height: 39px;
+        text-indent: -9999px;
+        overflow: hidden;
+        z-index: 2;
+        background-color: transparent;
+        border: none;
+        margin-bottom: 0;
+    }
+
+    &:hover .search-field {
+        width: 100%;
+        padding: 6px 40px 6px 12px;
+    }
+}
+
+/*
+==========================================
+SM and UP
+==========================================
+*/
+@include media-breakpoint-up(sm) {
+}
+
+/*
+Extra Small
+=====================================================*/
+@include media-breakpoint-only(xs) {
+    /*
+	Header
+	==========================================
+	*/
+
+    #header {
+        position: relative;
+        padding: 0;
+        // margin-left: 20px;
+        // margin-right: 20px;
+
+        .refru-logo-wrap {
+            order: 0;
+            text-align: left;
+            flex-basis: 100%;
+            padding: 0 15px;
+        }
+
+        .refru-main-nav-wrap {
+            display: block;
+            order: 6;
+            flex-basis: 100%;
+            text-align: left;
+        }
+
+        .refru-icons-nav-wrap {
+            flex-basis: 100%;
+            padding-left: 0;
+            margin-left: 0;
+
+            &::before {
+                display: none;
+            }
+
+            ul {
+                justify-content: center;
+            }
+
+            .js_active & .icons-navigation ul {
+                display: none;
+            }
+
+            .icons-navigation.toggled-on ul {
+                display: block;
+            }
+        }
+
+        .refru-social-icons-nav-wrap {
+            .js_active & .nav_social {
+                display: none;
+            }
+
+            .nav_social.toggled-on {
+                display: block;
+            }
+        }
+    }
+}

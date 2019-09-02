@@ -1,0 +1,284 @@
+/* 
+My Account
+=====================================================*/
+.woocommerce-account.woocommerce-page {
+    .page-header {
+        margin-bottom: 30px;
+
+        & > *:not(.alignwide):not(.alignfull) {
+            max-width: 85%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .entry-content {
+        & > *:not(.alignwide):not(.alignfull) {
+            max-width: 85%;
+        }
+    }
+}
+
+.woocommerce-account h2 {
+    font-size: 1.75rem;
+}
+
+.woocommerce-account h3 {
+    font-size: 1.5rem;
+}
+
+//First message
+.woocommerce .myaccount_user {
+    border: 2px solid $gray-400;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.woocommerce .myaccount_user a {
+    text-decoration: underline;
+}
+
+.woocommerce .myaccount_address {
+    margin-bottom: 1.875em;
+}
+
+.woocommerce-account .address .title {
+    margin-bottom: 15px;
+}
+
+.woocommerce-account .address address {
+    background-color: $gray-200;
+    padding: 30px;
+    display: inline-block;
+}
+
+.woocommerce .addresses .address,
+.woocommerce .addresses .col-1,
+.woocommerce .addresses .col-2 {
+    background-color: $gray-200;
+    padding: 1.25em;
+}
+
+.woocommerce .addresses .address .title,
+.woocommerce .addresses .col-1 .title,
+.woocommerce .addresses .col-2 .title {
+    margin-bottom: 0.9375em;
+    margin-top: 0;
+}
+
+.woocommerce table.my_account_orders {
+    margin-bottom: 70px;
+
+    > tbody > tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+/*
+My Account Login
+-------------------------------------------- */
+.woocommerce form.woocommerce-form-login {
+    min-height: 380px;
+    border: 2px solid $gray-400;
+    padding: 2.5em;
+
+    .woocommerce-form-login__rememberme {
+        margin-bottom: 0;
+
+        .woocommerce-form__input-checkbox {
+            display: inline-block;
+            height: auto;
+            margin-right: 5px;
+        }
+    }
+
+    .woocommerce-LostPassword {
+        margin-bottom: 0;
+
+        a {
+            font-size: 0.8125rem;
+            color: $gray-500;
+        }
+    }
+}
+
+/*
+My Account Login & Register
+-------------------------------------------- */
+.woocommerce #customer_login.col2-set {
+    display: flex;
+    justify-content: space-between;
+
+    .col-1 {
+        width: 45%;
+        min-width: 45%;
+    }
+    .col-2 {
+        width: 45%;
+        min-width: 45%;
+    }
+}
+
+/*
+My Account Register
+-------------------------------------------- */
+.woocommerce form.woocommerce-form-register {
+    min-height: 380px;
+    border: 2px solid $gray-400;
+    padding: 2.5em;
+
+    .woocommerce-privacy-policy-text {
+        font-size: 12px;
+        line-height: 1.6;
+        color: $gray-600;
+    }
+}
+
+/*
+My Account Navigation
+-------------------------------------------- */
+.woocommerce .woocommerce-MyAccount-navigation {
+    width: 20%;
+    margin-bottom: 50px;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        font-size: 0.9375rem;
+
+        .woocommerce-MyAccount-navigation-link {
+            margin-bottom: 5px;
+
+            a {
+                padding: 8px 16px;
+                display: block;
+                background-color: $gray-200;
+                color: $gray-600;
+                border-radius: 3px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $gray-300;
+                }
+            }
+
+            &.is-active a {
+                background-color: $gray-800;
+                color: #fff;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .woocommerce-MyAccount-navigation-link--downloads {
+            display: none;
+        }
+    }
+}
+/*
+My Account Navigation - Extra Small
+-------------------------------------------- */
+@include media-breakpoint-only(xs) {
+    .woocommerce .woocommerce-MyAccount-navigation {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* 
+Orders
+=====================================================*/
+
+/*
+Order Details (Table)
+-------------------------------------------- */
+table.order_details {
+    tbody {
+        font-size: 15px;
+        color: $gray-600;
+
+        .order_item {
+            a {
+                color: inherit;
+                text-decoration: underline;
+
+                .no-touchevents &:hover {
+                    color: $gray-900;
+                }
+            }
+
+            strong {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+/*
+Orders Table
+-------------------------------------------- */
+.woocommerce table.shop_table.woocommerce-orders-table {
+    tbody {
+        .woocommerce-orders-table__row {
+            .woocommerce-orders-table__cell-order-number {
+                a {
+                    color: #000;
+                }
+            }
+
+            .woocommerce-orders-table__cell-order-actions {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a.button {
+                    background-color: transparent;
+                    color: $gray-800;
+                    padding: 12px 18px;
+
+                    .no-touchevents &:hover {
+                        background-color: rgba(0, 0, 0, 0.08);
+                        color: $gray-900;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 
+Addresses
+=====================================================*/
+.woocommerce .addresses .woocommerce-Address {
+    background-color: $gray-200;
+    padding: 30px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.8;
+    width: auto;
+    padding: 20px;
+}
+
+/*
+Address
+-------------------------------------------- */
+.woocommerce-view-order address,
+.woocommerce-order-received address,
+.woocommerce .woocommerce-customer-details address {
+    background-color: $gray-200;
+    padding: 30px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.8;
+    width: auto;
+    padding: 20px;
+}
+
+/*
+Edit Account
+-------------------------------------------- */
+.woocommerce-account .addresses .title .edit {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+}

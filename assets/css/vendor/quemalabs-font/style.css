@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'quemalabs-font';
+  src:
+    url('fonts/quemalabs-font.ttf?rrjy7z') format('truetype'),
+    url('fonts/quemalabs-font.woff?rrjy7z') format('woff'),
+    url('fonts/quemalabs-font.svg?rrjy7z#quemalabs-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ql-icon-"], [class*=" ql-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'quemalabs-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ql-icon-home5:before {
+  content: "\e604";
+}
+.ql-icon-pen2:before {
+  content: "\e617";
+}
+.ql-icon-paint-roller:before {
+  content: "\e620";
+}
+.ql-icon-store:before {
+  content: "\e744";
+}
+.ql-icon-bag:before {
+  content: "\e74b";
+}
+.ql-icon-bag2:before {
+  content: "\e74c";
+}
+.ql-icon-cart:before {
+  content: "\e74d";
+}
+.ql-icon-cart-empty:before {
+  content: "\e74e";
+}
+.ql-icon-cart-full:before {
+  content: "\e74f";
+}
+.ql-icon-enter-up2:before {
+  content: "\e8ff";
+}
+.ql-icon-enter-down2:before {
+  content: "\e900";
+}
+.ql-icon-magnifier:before {
+  content: "\e922";
+}
+.ql-icon-exclamation:before {
+  content: "\e932";
+}
+.ql-icon-question:before {
+  content: "\e933";
+}
+.ql-icon-check:before {
+  content: "\e934";
+}
+.ql-icon-cross2:before {
+  content: "\e935";
+}
+.ql-icon-plus:before {
+  content: "\e936";
+}
+.ql-icon-minus:before {
+  content: "\e937";
+}
+.ql-icon-chevron-up:before {
+  content: "\e939";
+}
+.ql-icon-chevron-down:before {
+  content: "\e93a";
+}
+.ql-icon-chevron-left:before {
+  content: "\e93b";
+}
+.ql-icon-chevron-right:before {
+  content: "\e93c";
+}
+.ql-icon-arrow-left:before {
+  content: "\e943";
+}
+.ql-icon-arrow-right:before {
+  content: "\e944";
+}
+.ql-icon-checkmark-circle:before {
+  content: "\e959";
+}
+.ql-icon-cross-circle:before {
+  content: "\e95a";
+}
+.ql-icon-text-size:before {
+  content: "\e9a2";
+}

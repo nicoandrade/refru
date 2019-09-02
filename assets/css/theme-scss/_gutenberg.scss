@@ -1,0 +1,65 @@
+/**
+ * Fullwide CSS
+ */
+
+/* Unconstrained main colum */
+.entry-content > *:not(.alignwide):not(.alignfull) {
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-block-image.alignfull {
+    display: block;
+    text-align: center;
+}
+
+.wp-block-image.alignwide {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* We float the img inside the figure that has .alignleft applied.
+   This makes the .alignleft element have the same main column width as text.
+   What makes the float work is that the figure collapses into a zero height element */
+
+.wp-block-image figure.alignleft {
+    display: block;
+    float: left;
+    margin-right: 2em;
+}
+
+.wp-block-image figure.alignright {
+    display: block;
+    float: right;
+    margin-left: 2em;
+}
+
+/* For captions, we display the figure itself as a table.
+   This ensures the figcaption will retain the same width as the image,
+   which is important when the caption is long. */
+.wp-block-image figure.alignleft,
+.wp-block-image figure.alignright {
+    display: table;
+}
+
+.wp-block-image figure.alignleft figcaption,
+.wp-block-image figure.alignright figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+.wp-block-image figure.alignright figcaption,
+.wp-block-image figure.alignleft figcaption {
+    font-size: 75%;
+    color: gray;
+    margin-bottom: 1em;
+}
+
+@include media-breakpoint-only(xs) {
+    /* Unconstrained main colum */
+    .entry-content > *:not(.alignwide):not(.alignfull) {
+        max-width: 85%;
+    }
+}

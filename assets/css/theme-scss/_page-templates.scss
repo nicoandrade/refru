@@ -1,0 +1,13 @@
+/*
+2 Shop Sidebars Template
+============================*/
+.page-template-template-2-shop-sidebars {
+    /*
+    Gutenberg WooCommerce Blocks
+    All WooCommerce blocks are full width on this template
+    ============================*/
+    div[class^="wp-block-woocommerce-"],
+    div[class*=" wp-block-woocommerce-"] {
+        max-width: 100% !important;
+    }
+}

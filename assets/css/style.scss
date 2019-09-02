@@ -1,0 +1,144 @@
+/*!
+Theme Name: Refru
+Theme URI: https://www.quemalabs.com/theme/refru/
+Description: Refru is a fast WooCommerce storefront, ideal for create a creative shop online or a referral business from sites like Amazon or AliExpress. Very flexible theme that takes Gutenberg and the Customizer to the next level.
+Version: 1.0.0
+Author: Quema Labs
+Author URI: https://www.quemalabs.com/
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Tags: e-commerce, two-columns, custom-background, threaded-comments, custom-menu, featured-images, sticky-post, translation-ready
+Text Domain: refru
+*/
+/*
+---------------------------------------------
+TABLE OF CONTENTS
+---------------------------------------------
+0. Imports
+1. Header
+2. Menu
+3. Blog & Pages
+4. Page Templates
+5. Sidebar
+6. Footer
+7. Comments
+8. Woocommerce
+9. Pace
+10. Animations
+11. Shortcodes
+12. Gutenberg
+13. Animate
+14. WordPress Default
+15. External Plugins
+16. Global Styles
+17. Responsive Styles
+---------------------------------------------
+*/
+
+/*
+0. Imports
+============================================= */
+@import "theme-scss/imports";
+
+/*
+1. Header
+============================================= */
+@import "theme-scss/header";
+
+/*
+2. Menu
+============================================= */
+@import "theme-scss/menu";
+
+/*
+3. Blog & Pages
+============================================= */
+@import "theme-scss/pages";
+
+/*
+4. Page Templates
+============================================= */
+@import "theme-scss/page-templates";
+
+/*
+5. Sidebar
+============================================= */
+@import "theme-scss/sidebar";
+
+/*
+6. Footer
+============================================= */
+@import "theme-scss/footer";
+
+/*
+7. Comments
+============================================= */
+@import "theme-scss/comments";
+
+/*
+8. WooCommerce
+============================================= */
+@import "theme-scss/woocommerce";
+
+/*
+9. Pace (Loading animation)
+============================================= */
+@import "theme-scss/pace";
+
+/*
+10. Animations
+============================================= */
+@import "theme-scss/animations";
+
+/*
+11. Shortcodes
+============================================= */
+@import "theme-scss/shortcodes";
+
+/*
+12. Gutenberg
+============================================= */
+@import "theme-scss/gutenberg";
+
+/*
+13. Animate
+============================================= */
+@import "theme-scss/animate";
+
+/*
+14. WordPress Default
+============================================= */
+@import "theme-scss/wp-default";
+
+/*
+15. External Plugins
+============================================= */
+@import "theme-scss/external-plugins";
+
+/*
+16. Global Styles
+============================================= */
+@import "theme-scss/global";
+
+/*
+17. Responsive Styles
+============================================= */
+/*
+// Extra Small Breakpoint
+*/
+@import "theme-scss/mediaquery-xs";
+
+/*
+// Small Breakpoint
+*/
+@import "theme-scss/mediaquery-sm";
+
+/*
+// Medium Breakpoint
+*/
+@import "theme-scss/mediaquery-md";
+
+/*
+// Extra Larga Breakpoint
+*/
+@import "theme-scss/_mediaquery-lg";

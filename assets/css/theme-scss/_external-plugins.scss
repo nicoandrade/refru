@@ -1,0 +1,189 @@
+/*
+// Contact Form 7
+// ------------------
+*/
+.wpcf7 p {
+    margin-bottom: 25px;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"] {
+    width: 50%;
+}
+
+.wpcf7 select {
+    font-size: 0.875rem;
+}
+
+//Checkbox & Radios
+.wpcf7 input[type="checkbox"],
+.wpcf7 input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.wpcf7-list-item {
+    display: block;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+//Textarea
+.wpcf7 textarea {
+    width: 80%;
+}
+
+//Submit Button
+.wpcf7 input[type="submit"] {
+    width: auto;
+    transition: background-color 200ms;
+    padding: 6px 15px;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    color: #fff;
+}
+
+.wpcf7 input[disabled="disabled"] {
+    opacity: 0.3;
+}
+
+//Quiz
+.wpcf7-quiz {
+    margin-bottom: 0;
+}
+
+//Errors
+.wpcf7-not-valid {
+    border-color: red;
+}
+
+/*
+* Mailchimp for WordPress
+* https://wordpress.org/plugins/mailchimp-for-wp/
+* ------------------
+*/
+.mc4wp-form {
+    .mc4wp-form-fields {
+        p {
+            margin-bottom: 10px;
+            padding-top: 0;
+        }
+
+        input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: transparent;
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 0.8125rem;
+
+            &[type="submit"] {
+                display: inline-block;
+                width: auto;
+                margin-top: 0;
+                text-transform: uppercase;
+                padding-left: 20px;
+                padding-right: 20px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08),
+                    0 4px 6px rgba(0, 0, 0, 0.11);
+
+                .no-touchevents &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+}
+
+/*
+* Easy Forms for MailChimp
+* https://wordpress.org/plugins/yikes-inc-easy-mailchimp-extender/
+* ------------------
+*/
+.yikes-mailchimp-container {
+    .yikes-easy-mc-form {
+        input[type="email"],
+        input[type="number"],
+        input[type="text"],
+        input[type="url"],
+        select {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: transparent;
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 0.8125rem;
+        }
+
+        .yikes-easy-mc-submit-button {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: transparent;
+            color: #fff;
+            display: inline-block;
+            width: auto;
+            margin-top: 0;
+            text-transform: uppercase;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08),
+                0 4px 6px rgba(0, 0, 0, 0.11);
+            font-size: 0.8125rem;
+
+            .no-touchevents &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
+
+/*
+// Jetpack Contact Form
+// ------------------
+*/
+.contact-form {
+    border-radius: 4px;
+    padding: 2.22222222222222em 2.77777777777778em;
+
+    & > div {
+        margin-bottom: 1.11111111111111em;
+    }
+
+    label {
+        font-weight: normal !important;
+    }
+
+    textarea {
+        width: 100% !important;
+    }
+
+    input[type="submit"] {
+        @extend .refru-button;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+}
+
+.contact-form-submission {
+    font-size: 0.875rem;
+}
+
+// @media (max-width: @screen-xs-max) {
+// 	.contact-form{
+// 		padding: 1.11111111111111em;
+// 	}
+// }
+
+/* Subscription to posts */
+.comment-subscription-form {
+    margin: 10px 0 0;
+
+    input {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 0;
+        height: auto;
+    }
+}

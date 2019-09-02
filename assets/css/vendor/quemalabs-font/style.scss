@@ -1,0 +1,268 @@
+$ql-font-path: "assets/css/vendor/quemalabs-font/fonts" !default;
+
+@font-face {
+    font-family: "quemalabs-font";
+    src: url("#{$ql-font-path}/quemalabs-font.ttf?6zw6tb") format("truetype"),
+        url("#{$ql-font-path}/quemalabs-font.woff?6zw6tb") format("woff"),
+        url("#{$ql-font-path}/quemalabs-font.svg?6zw6tb#quemalabs-font")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ql-icon-"],
+[class*=" ql-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "quemalabs-font" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ql-icon-cheap_2:before {
+    content: "\e91d";
+}
+.ql-icon-external_link_squared:before {
+    content: "\e91c";
+}
+.ql-icon-discount_56:before {
+    content: "\e91b";
+}
+.ql-icon-beer_pump:before {
+    content: "\e91a";
+}
+.ql-icon-shopping_cart_loaded:before {
+    content: "\e918";
+}
+.ql-icon-shopping_cart:before {
+    content: "\e919";
+}
+.ql-icon-overview_pages_1:before {
+    content: "\e917";
+}
+.ql-icon-help:before {
+    content: "\e915";
+}
+.ql-icon-info:before {
+    content: "\e916";
+}
+.ql-icon-no_credit_cards:before {
+    content: "\e90d";
+}
+.ql-icon-bank_card_front_side:before {
+    content: "\e90e";
+}
+.ql-icon-card_verification_value:before {
+    content: "\e90f";
+}
+.ql-icon-discover:before {
+    content: "\e910";
+}
+.ql-icon-visa:before {
+    content: "\e911";
+}
+.ql-icon-diners_club:before {
+    content: "\e912";
+}
+.ql-icon-am_ex:before {
+    content: "\e913";
+}
+.ql-icon-mastercard:before {
+    content: "\e914";
+}
+.ql-icon-icons8-print:before {
+    content: "\e90c";
+}
+.ql-icon-icons8-paycheque:before {
+    content: "\e90b";
+}
+.ql-icon-settings:before {
+    content: "\e901";
+}
+.ql-icon-user_male_circle:before {
+    content: "\e902";
+}
+.ql-icon-combo_chart:before {
+    content: "\e903";
+}
+.ql-icon-home:before {
+    content: "\e904";
+}
+.ql-icon-edit_property:before {
+    content: "\e905";
+}
+.ql-icon-beer_keg:before {
+    content: "\e906";
+}
+.ql-icon-truck:before {
+    content: "\e907";
+}
+.ql-icon-move_by_trolley:before {
+    content: "\e908";
+}
+.ql-icon-beer_glass:before {
+    content: "\e909";
+}
+.ql-icon-small_business:before {
+    content: "\e90a";
+}
+.ql-icon-home5:before {
+    content: "\e604";
+}
+.ql-icon-feather2:before {
+    content: "\e615";
+}
+.ql-icon-pen2:before {
+    content: "\e617";
+}
+.ql-icon-paint-roller:before {
+    content: "\e620";
+}
+.ql-icon-cog:before {
+    content: "\e672";
+}
+.ql-icon-star-half:before {
+    content: "\e68e";
+}
+.ql-icon-at-sign:before {
+    content: "\e695";
+}
+.ql-icon-envelope:before {
+    content: "\e696";
+}
+.ql-icon-eye:before {
+    content: "\e6a5";
+}
+.ql-icon-folder:before {
+    content: "\e6ba";
+}
+.ql-icon-clipboard-text:before {
+    content: "\e6cb";
+}
+.ql-icon-user:before {
+    content: "\e71e";
+}
+.ql-icon-store:before {
+    content: "\e744";
+}
+.ql-icon-bag:before {
+    content: "\e74b";
+}
+.ql-icon-bag2:before {
+    content: "\e74c";
+}
+.ql-icon-cart:before {
+    content: "\e74d";
+}
+.ql-icon-cart-empty:before {
+    content: "\e74e";
+}
+.ql-icon-cart-full:before {
+    content: "\e74f";
+}
+.ql-icon-map2:before {
+    content: "\e782";
+}
+.ql-icon-briefcase:before {
+    content: "\e83a";
+}
+.ql-icon-volume-high:before {
+    content: "\e8b0";
+}
+.ql-icon-volume-medium:before {
+    content: "\e8b1";
+}
+.ql-icon-volume-low:before {
+    content: "\e8b2";
+}
+.ql-icon-volume:before {
+    content: "\e8b3";
+}
+.ql-icon-sync:before {
+    content: "\e8da";
+}
+.ql-icon-enter-up2:before {
+    content: "\e8ff";
+}
+.ql-icon-enter-down2:before {
+    content: "\e900";
+}
+.ql-icon-magnifier:before {
+    content: "\e922";
+}
+.ql-icon-exclamation:before {
+    content: "\e932";
+}
+.ql-icon-question:before {
+    content: "\e933";
+}
+.ql-icon-check:before {
+    content: "\e934";
+}
+.ql-icon-cross2:before {
+    content: "\e935";
+}
+.ql-icon-plus:before {
+    content: "\e936";
+}
+.ql-icon-minus:before {
+    content: "\e937";
+}
+.ql-icon-chevron-up:before {
+    content: "\e939";
+}
+.ql-icon-chevron-down:before {
+    content: "\e93a";
+}
+.ql-icon-chevron-left:before {
+    content: "\e93b";
+}
+.ql-icon-chevron-right:before {
+    content: "\e93c";
+}
+.ql-icon-arrow-left:before {
+    content: "\e943";
+}
+.ql-icon-arrow-right:before {
+    content: "\e944";
+}
+.ql-icon-warning:before {
+    content: "\e955";
+}
+.ql-icon-notification-circle:before {
+    content: "\e956";
+}
+.ql-icon-question-circle:before {
+    content: "\e957";
+}
+.ql-icon-checkmark-circle:before {
+    content: "\e959";
+}
+.ql-icon-cross-circle:before {
+    content: "\e95a";
+}
+.ql-icon-chevron-up-circle:before {
+    content: "\e962";
+}
+.ql-icon-chevron-down-circle:before {
+    content: "\e963";
+}
+.ql-icon-chevron-left-circle:before {
+    content: "\e964";
+}
+.ql-icon-chevron-right-circle:before {
+    content: "\e965";
+}
+.ql-icon-funnel:before {
+    content: "\e97c";
+}
+.ql-icon-text-size:before {
+    content: "\e9a2";
+}

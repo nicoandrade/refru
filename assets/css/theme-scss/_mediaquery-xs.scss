@@ -1,0 +1,124 @@
+@include media-breakpoint-only(xs) {
+    .pace {
+        display: none;
+    }
+
+    .refru-header-button {
+        display: none;
+    }
+
+    .refru-cart-btn {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding: 12px 14px;
+        border-bottom: none;
+    }
+
+    .refru-header-1 #header .refru-cart-btn.cart-empty {
+        padding: 14px 18px;
+    }
+
+    .refru-preloader {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    /*
+	Footer
+	==========================================
+	*/
+    #footer {
+        .footer-column {
+            display: block;
+            width: 100%;
+            margin: 2% 1%;
+        }
+    }
+
+    /*
+	==========================================
+	Shop Sidebar
+	==========================================
+	*/
+    .refru-sidebar-wrapper {
+        .refru-shop-sidebar-left & {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    /*
+	Cart
+	==========================================
+	*/
+    .woocommerce-cart .cart .cart_item {
+        width: 99%;
+    }
+
+    .woocommerce-cart #content form {
+        width: 100%;
+        display: block;
+    }
+
+    .woocommerce-cart #content .cart-collaterals {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+
+    .woocommerce-cart .actions .coupon {
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .woocommerce-cart .actions > .button {
+        float: none;
+    }
+
+    /* WooCommerce Checkout Page
+	=====================================================*/
+    #customer_details {
+        margin-bottom: 2.5em;
+        width: 100%;
+        margin-right: 0;
+        display: block;
+    }
+
+    .woocommerce .col2-set .col-1,
+    .woocommerce-page .col2-set .col-1,
+    .woocommerce .col2-set .col-2,
+    .woocommerce-page .col2-set .col-2 {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #order_review_heading {
+        display: none;
+    }
+
+    #order_review {
+        display: block;
+        width: 100%;
+    }
+
+    .woocommerce .woocommerce-MyAccount-content {
+        .woocommerce-Address {
+            margin-bottom: 20px;
+        }
+
+        .woocommerce-EditAccountForm {
+            padding: 20px;
+        }
+    }
+
+    .woocommerce-account .woocommerce-MyAccount-content {
+        width: 100%;
+    }
+}
