@@ -33,43 +33,43 @@ Refru is a fast WooCommerce storefront, ideal for create a creative shop online 
 
 == Resources ==
 Underscores 
-(C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-Source: http://underscores.me/
+(C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)  
+Source: http://underscores.me/  
 
-Font Awesome icon font, Created by Dave Gandy
-Font Awesome licensed under SIL OFL 1.1 · Code licensed under MIT License
-Source: http://fortawesome.github.io/
+Font Awesome icon font, Created by Dave Gandy  
+Font Awesome licensed under SIL OFL 1.1 · Code licensed under MIT License  
+Source: http://fortawesome.github.io/  
 
-Bootstrap Created by @mdo and @fat.
-Code licensed under MIT
-Source: http://getbootstrap.com
+Bootstrap Created by @mdo and @fat.  
+Code licensed under MIT  
+Source: http://getbootstrap.com  
 
-Modernizr by Faruk, Paul, Alex, Ryan, Patrick, Stu, and Richard | MIT License
-License: https://opensource.org/licenses/MIT
-Source: https://modernizr.com
+Modernizr by Faruk, Paul, Alex, Ryan, Patrick, Stu, and Richard | MIT License  
+License: https://opensource.org/licenses/MIT  
+Source: https://modernizr.com  
 
-imagesLoaded by Metafizzy | MIT License
-License: http://desandro.mit-license.org/
-Source: http://imagesloaded.desandro.com
+imagesLoaded by Metafizzy | MIT License  
+License: http://desandro.mit-license.org/  
+Source: http://imagesloaded.desandro.com  
 
-Pace
-License: https://raw.githubusercontent.com/HubSpot/pace/master/LICENSE
-Source: http://github.hubspot.com/pace/docs/welcome/
+Pace  
+License: https://raw.githubusercontent.com/HubSpot/pace/master/LICENSE  
+Source: http://github.hubspot.com/pace/docs/welcome/  
 
-HTML5 Shiv by @afarkas @jdalton @jon_neal @rem
-License: MIT/GPL2 Licensed
-Source: https://github.com/afarkas/html5shiv
+HTML5 Shiv by @afarkas @jdalton @jon_neal @rem  
+License: MIT/GPL2 Licensed  
+Source: https://github.com/afarkas/html5shiv  
 
-[Lato](https://fonts.google.com/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
+[Lato](https://fonts.google.com/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).  
 
 Images in Screenshot
-https://stocksnap.io/photo/369QXKDB8F
-https://stocksnap.io/photo/JETTZWAHZV
-https://stocksnap.io/photo/EXCBJA3FFQ
-https://stocksnap.io/photo/YIESHLMKBQ
-License: https://stocksnap.io/license
-Source: https://stocksnap.io/
+https://stocksnap.io/photo/369QXKDB8F  
+https://stocksnap.io/photo/JETTZWAHZV  
+https://stocksnap.io/photo/EXCBJA3FFQ  
+https://stocksnap.io/photo/YIESHLMKBQ  
+License: https://stocksnap.io/license  
+Source: https://stocksnap.io/  
 
-https://pxhere.com/en/photo/1430855
-License: https://pxhere.com/en/license
-Source: https://pxhere.com/
+https://pxhere.com/en/photo/1430855  
+License: https://pxhere.com/en/license  
+Source: https://pxhere.com/  
