@@ -1,5 +1,4 @@
-# Refru
-
+# Refru 
 **Contributors:** nicoandrade  
 **Author:** Quema Labs  
 **Tags:** e-commerce, blog, featured-images, two-columns, threaded-comments, custom-menu, left-sidebar, sticky-post, translation-ready, custom-background, full-width-template, rtl-language-support, theme-options  
@@ -8,29 +7,32 @@
 **Stable tag:** 1.0.0  
 Requires PHP: 5.6  
 **License:** GPLv2 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-Refru is a beautiful premium theme, perfect for small business.
+Refru is a fast WooCommerce storefront, ideal for create a creative shop online or a referral business from sites like Amazon or AliExpress. Very flexible theme that takes Gutenberg and the Customizer to the next level.
 
-## Description
 
-Refru is a beautiful premium theme, perfect for small business.
+## Description 
+Refru is a fast WooCommerce storefront, ideal for create a creative shop online or a referral business from sites like Amazon or AliExpress. Very flexible theme that takes Gutenberg and the Customizer to the next level.
 
-## Installation
 
+## Installation 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-## Changelog
 
-#### 1.0.0 - 02/09/2019
+## Changelog 
 
--   Initial Release
+#### 1.0.1 - 02/09/2019 
+* Change: Readme
 
-## Resources
+#### 1.0.0 - 02/09/2019 
+* Initial Release
 
-Underscores
+
+## Resources 
+Underscores 
 (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 **Source:** http://underscores.me/
 
@@ -50,10 +52,6 @@ imagesLoaded by Metafizzy | MIT License
 **License:** http://desandro.mit-license.org/
 **Source:** http://imagesloaded.desandro.com
 
-Flickity by Metafizzy | GPLv3
-**License:** http://isotope.metafizzy.co/license.html
-**Source:** http://isotope.metafizzy.co/
-
 Pace
 **License:** https://raw.githubusercontent.com/HubSpot/pace/master/LICENSE
 **Source:** http://github.hubspot.com/pace/docs/welcome/
@@ -62,9 +60,16 @@ HTML5 Shiv by @afarkas @jdalton @jon_neal @rem
 **License:** MIT/GPL2 Licensed
 **Source:** https://github.com/afarkas/html5shiv
 
-[Source Sans Pro Font](https://fonts.google.com/specimen/Source+Sans+Pro) by Paul D. Hunt - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
-[Inconsolata Font](https://fonts.google.com/specimen/Inconsolata) by Raph Levien - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
+[Lato](https://fonts.google.com/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
 
-Images from Unsplash
-**License:** https://unsplash.com/license
-**Source:** https://unsplash.com
+Images in Screenshot
+https://stocksnap.io/photo/369QXKDB8F
+https://stocksnap.io/photo/JETTZWAHZV
+https://stocksnap.io/photo/EXCBJA3FFQ
+https://stocksnap.io/photo/YIESHLMKBQ
+**License:** https://stocksnap.io/license
+**Source:** https://stocksnap.io/
+
+https://pxhere.com/en/photo/1430855
+**License:** https://pxhere.com/en/license
+**Source:** https://pxhere.com/
