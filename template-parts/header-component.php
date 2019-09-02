@@ -26,10 +26,9 @@
 
     <div class="refru-logo-wrap">
         <?php
-            $logo = '<a href="' . esc_url( home_url( '/' ) ) . '" rel="home" class="ql_logo">' . esc_html( get_bloginfo( 'name' ) ) . '</a><a href="' . esc_url( home_url( '/' ) ) . '" rel="home">' . esc_html( get_bloginfo( 'name' ) ) . '</a>';
+            $logo = '<a href="' . esc_url( home_url( '/' ) ) . '" rel="home" class="ql_logo">' . esc_html( get_bloginfo( 'name' ) ) . '</a>';
             if ( has_custom_logo() ) {
                 $logo = get_custom_logo();
-
             }
         ?>
         <?php if ( is_front_page() ): ?>
