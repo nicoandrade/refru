@@ -24,6 +24,9 @@ Refru is a fast WooCommerce storefront, ideal for create a creative shop online 
 
 == Changelog ==
 
+= 1.0.2 - Developing... =
+* Fixed: Documentation URL
+
 = 1.0.1 - 02/09/2019 =
 * Change: Readme
 
@@ -62,7 +65,7 @@ Source: https://github.com/afarkas/html5shiv
 
 [Lato](https://fonts.google.com/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).  
 
-Images in Screenshot
+Images in Screenshot  
 https://stocksnap.io/photo/369QXKDB8F  
 https://stocksnap.io/photo/JETTZWAHZV  
 https://stocksnap.io/photo/EXCBJA3FFQ  

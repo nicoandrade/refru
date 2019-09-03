@@ -73,28 +73,9 @@
     <div class="theme-docuementation">
         <div class="help-msg-wrap">
             <div class="help-msg">
-                <?php echo sprintf( esc_html__( 'You can find this documentation and more at our %1$sHelp Center%2$s.', 'refru' ), '<a href="https://quemalabs.ticksy.com/articles/100012439" target="_blank">', '</a>' ); ?>
+                <?php echo sprintf( esc_html__( 'You can find this documentation and more at our %1$sHelp Center%2$s.', 'refru' ), '<a href="https://quemalabs.ticksy.com/articles/100015740" target="_blank">', '</a>' ); ?>
             </div>
         </div>
-
-        <?php
-            $url = wp_nonce_url( 'themes.php?page=refru_theme-info', 'more-themes' );
-                        if ( false === ( $creds = request_filesystem_credentials( $url, '', false, false, null ) ) ) {
-                            return; // stop processing here
-                        }
-                        if ( ! WP_Filesystem( $creds ) ) {
-                            request_filesystem_credentials( $url, '', true, false, null );
-                            return;
-                        }
-                        global $wp_filesystem;
-                        $content = $wp_filesystem->get_contents( 'https://quemalabs.ticksy.com/articles/100012439' );
-                        if ( $content ) {
-                            $first_step = explode( '<article class="articles-list">', $content );
-                            $second_step = explode( "</article>", $first_step[1] );
-
-                            echo wp_kses_post( str_replace( '<a href="/article/', '<a target="_blank" href="https://quemalabs.ticksy.com/article/', $second_step[0] ) );
-                        }
-                    ?>
     </div><!-- .theme-docuementation -->
     <?php
         break;
