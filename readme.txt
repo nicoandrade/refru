@@ -4,7 +4,7 @@ Author: Quema Labs
 Tags: e-commerce, blog, featured-images, two-columns, threaded-comments, custom-menu, left-sidebar, sticky-post, translation-ready, custom-background, full-width-template, rtl-language-support, theme-options  
 Requires at least: 4.9.6  
 Tested up to: WordPress 5.2.2  
-Stable tag: 1.0.0  
+Stable tag: 1.0.2  
 Requires PHP: 5.6  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
@@ -24,8 +24,9 @@ Refru is a fast WooCommerce storefront, ideal for create a creative shop online 
 
 == Changelog ==
 
-= 1.0.2 - Developing... =
+= 1.0.2 - 03/09/2019 =
 * Fixed: Documentation URL
+* Fixed: JS script load name
 
 = 1.0.1 - 02/09/2019 =
 * Change: Readme

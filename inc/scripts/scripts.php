@@ -26,7 +26,7 @@
         'collapse'   => __( 'Collapse child menu', 'refru' ),
         'icon'       => refru_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) ),
     );
-    wp_localize_script( 'refru-custom', 'refru_pro', $refru_custom_js );
+    wp_localize_script( 'refru-custom', 'refru', $refru_custom_js );
     //=================================================================
 
     if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || ( function_exists( 'is_plugin_active_for_network' ) && is_plugin_active_for_network( 'woocommerce/woocommerce.php' ) ) ) {
