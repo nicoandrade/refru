@@ -297,9 +297,8 @@ Header Widget Area
 
     .widget_recent_comments ul li::before {
         display: inline-block;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
+        @extend %fa-icon;
+        @extend .far;
         text-decoration: inherit;
         content: "";
         position: absolute;

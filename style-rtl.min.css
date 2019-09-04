@@ -1213,7 +1213,8 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .text-reset{color:inherit !important}
 .visible{visibility:visible !important}
 .invisible{visibility:hidden !important}
-/*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */.fa,.fas,.post-image a::after,.far,.comment-list .comment .comment-body .reply .comment-reply-link::before,.fal,.fad,.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+/*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */.fa,.fas,.post-image a::after,.far,.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a[href*="mailto:"]::before,[id^="menu-social"] li a[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .comment-reply-link::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before,.fal,.fad,.fab,.nav_social li a::before,.widget [id^="menu-social"] li a::before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a::before,.widget [id^="menu-social"] li a::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;font-style:normal;font-variant:normal;font-weight:normal;line-height:1}
 .fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}
 .fa-xs{font-size:.75em}
 .fa-sm{font-size:.875em}
@@ -1234,8 +1235,8 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}
 .fa-pull-left{float:right}
 .fa-pull-right{float:left}
-.fa.fa-pull-left,.fas.fa-pull-left,.post-image a.fa-pull-left::after,.far.fa-pull-left,.comment-list .comment .comment-body .reply .fa-pull-left.comment-reply-link::before,.fal.fa-pull-left,.fab.fa-pull-left{margin-left:.3em}
-.fa.fa-pull-right,.fas.fa-pull-right,.post-image a.fa-pull-right::after,.far.fa-pull-right,.comment-list .comment .comment-body .reply .fa-pull-right.comment-reply-link::before,.fal.fa-pull-right,.fab.fa-pull-right{margin-right:.3em}
+.fa.fa-pull-left,.fas.fa-pull-left,.post-image a.fa-pull-left::after,.far.fa-pull-left,.widget_recent_comments ul li.fa-pull-left::before,.nav_social li a.fa-pull-left[href*="mailto:"]::before,[id^="menu-social"] li a.fa-pull-left[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .fa-pull-left.comment-reply-link::before,#sidebar .fa-pull-left.woocommerce-product-search::before,.sticky .fa-pull-left.post-title::before,.search-form label.fa-pull-left::before,.fal.fa-pull-left,.fab.fa-pull-left,.nav_social li a.fa-pull-left::before,.widget [id^="menu-social"] li a.fa-pull-left::before{margin-left:.3em}
+.fa.fa-pull-right,.fas.fa-pull-right,.post-image a.fa-pull-right::after,.far.fa-pull-right,.widget_recent_comments ul li.fa-pull-right::before,.nav_social li a.fa-pull-right[href*="mailto:"]::before,[id^="menu-social"] li a.fa-pull-right[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .fa-pull-right.comment-reply-link::before,#sidebar .fa-pull-right.woocommerce-product-search::before,.sticky .fa-pull-right.post-title::before,.search-form label.fa-pull-right::before,.fal.fa-pull-right,.fab.fa-pull-right,.nav_social li a.fa-pull-right::before,.widget [id^="menu-social"] li a.fa-pull-right::before{margin-right:.3em}
 .fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}
 .fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}
 @keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
@@ -2639,12 +2640,12 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .fa-zhihu:before{content:"\f63f"}
 .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
-/*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:400;font-display:auto;src:url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.eot");src:url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg")}
-.far,.comment-list .comment .comment-body .reply .comment-reply-link::before{font-family:'Font Awesome 5 Free';font-weight:400}
+/*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:auto;src:url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.eot");src:url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg")}
+.far,.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a[href*="mailto:"]::before,[id^="menu-social"] li a[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .comment-reply-link::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before{font-family:"Font Awesome 5 Free";font-weight:400}
 /*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;font-display:auto;src:url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.eot");src:url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg")}
 .fa,.fas,.post-image a::after{font-family:'Font Awesome 5 Free';font-weight:900}
 /*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;font-display:auto;src:url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.eot");src:url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg")}
-.fab{font-family:'Font Awesome 5 Brands'}
+.fab,.nav_social li a::before,.widget [id^="menu-social"] li a::before{font-family:'Font Awesome 5 Brands'}
 @font-face{font-family:"quemalabs-font";src:url("assets/css/vendor/quemalabs-font/fonts/quemalabs-font.ttf?6zw6tb") format("truetype"),url("assets/css/vendor/quemalabs-font/fonts/quemalabs-font.woff?6zw6tb") format("woff"),url("assets/css/vendor/quemalabs-font/fonts/quemalabs-font.svg?6zw6tb#quemalabs-font") format("svg");font-weight:normal;font-style:normal}
 [class^="ql-icon-"],[class*=" ql-icon-"]{font-family:"quemalabs-font" !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .ql-icon-cheap_2:before{content:"\e91d"}
@@ -2772,7 +2773,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .header-widget-area .widget ul ul,.header-widget-area .widget ul ol,.header-widget-area .widget ol ul,.header-widget-area .widget ol ol{margin-right:15px}
 .header-widget-area .widget_recent_comments ul#recentcomments{margin-top:17px}
 .header-widget-area .widget_recent_comments ul li{padding-right:30px;padding-top:0;padding-bottom:0;margin-bottom:20px;border:0;position:relative;display:block;width:100%}
-.header-widget-area .widget_recent_comments ul li::before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;content:"";position:absolute;right:0;top:0;font-size:14px}
+.header-widget-area .widget_recent_comments ul li::before{display:inline-block;text-decoration:inherit;content:"";position:absolute;right:0;top:0;font-size:14px}
 .header-widget-area .widget_recent_comments ul li a{display:inline;background:0;padding:0}
 .header-widget-area .widget_recent_comments ul li a:hover{background:0}
 .header-widget-area .rsswidget{color:inherit}
@@ -3032,7 +3033,7 @@ body.page-template-default.refru-with-sidebar #content{width:70%}
 .widget select{margin-right:5px;color:#495057}
 .widget_recent_comments ul#recentcomments{margin-top:17px}
 .widget_recent_comments ul li{padding-right:35px;margin-bottom:20px;border:0;position:relative;display:block;width:100%}
-.widget_recent_comments ul li::before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;content:"";position:absolute;right:0;top:0;font-size:14px}
+.widget_recent_comments ul li::before{display:inline-block;text-decoration:inherit;content:"";position:absolute;right:0;top:0;font-size:14px}
 .widget_recent_comments ul li i{position:absolute;color:#dee2e6;right:0;top:20%;font-size:1.45454545454545em}
 .widget_recent_comments ul li a{display:inline;background:0;padding:0}
 .widget_recent_comments ul li a:hover{background:0}
@@ -3071,7 +3072,7 @@ body.page-template-default.refru-with-sidebar #content{width:70%}
 .nav_social li a,.widget [id^="menu-social"] li a{padding:0;overflow:hidden;display:block;position:relative;width:35px;height:35px;line-height:35px;color:#dee2e6;-webkit-transition:background 200ms;transition:background 200ms;text-decoration:none;text-align:center;font-weight:normal;border-radius:3px}
 .nav_social li a:hover,.widget [id^="menu-social"] li a:hover{color:#fff}
 .nav_social li a:hover::before,.widget [id^="menu-social"] li a:hover::before{color:#fff !important;-webkit-animation:social_icons_anim 500ms ease;animation:social_icons_anim 500ms ease}
-.nav_social li a::before,.widget [id^="menu-social"] li a::before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:inherit;font-size:18px;line-height:1em;width:18px;height:18px;color:#fff;color:inherit;text-decoration:none !important}
+.nav_social li a::before,.widget [id^="menu-social"] li a::before{font-size:18px;width:18px;height:18px;color:#fff;color:inherit;text-decoration:none !important}
 @media(max-width:575.98px){.nav_social{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 }.widget [id^="menu-social"]{padding-right:0;list-style:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .widget [id^="menu-social"] li a{width:50px;height:50px;line-height:58px;padding:0 !important;vertical-align:middle;color:#4662ef}
@@ -3133,7 +3134,7 @@ body.page-template-default.refru-with-sidebar #content{width:70%}
 .nav_social li a[href*="behance.net"]:hover,[id^="menu-social"] li a[href*="behance.net"]:hover{background-color:#07f}
 .nav_social li a[href*="amazon."]::before,[id^="menu-social"] li a[href*="amazon."]::before{content:"\f270"}
 .nav_social li a[href*="amazon."]:hover,[id^="menu-social"] li a[href*="amazon."]:hover{background-color:#f90}
-.nav_social li a[href*="mailto:"]::before,[id^="menu-social"] li a[href*="mailto:"]::before{content:"\f003"}
+.nav_social li a[href*="mailto:"]::before,[id^="menu-social"] li a[href*="mailto:"]::before{content:"\f0e0"}
 .nav_social li a[href*="mailto:"]:hover,[id^="menu-social"] li a[href*="mailto:"]:hover{background-color:#f90}
 .nav_social li a[href*="t.me"]::before,[id^="menu-social"] li a[href*="t.me"]::before{content:"\f2c6"}
 .nav_social li a[href*="telegram.me"]::before,[id^="menu-social"] li a[href*="telegram.me"]::before{content:"\f2c6"}
@@ -3550,7 +3551,7 @@ table.order_details tbody .order_item strong{margin-right:5px}
 .woocommerce .widget_price_filter .price_slider_wrapper .price_label{color:#adb5bd;margin-top:5px;display:block;text-align:right}
 .refru-light-background.woocommerce .widget_price_filter .price_slider_wrapper .price_label{color:#6c757d}
 #sidebar .woocommerce-product-search{position:relative}
-#sidebar .woocommerce-product-search::before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;content:"";position:absolute;left:10px;top:8px;color:#dee2e6;font-size:14px;width:16px;height:16px;z-index:1}
+#sidebar .woocommerce-product-search::before{display:inline-block;text-decoration:inherit;content:"";position:absolute;left:10px;top:8px;color:#dee2e6;font-size:14px;width:16px;height:16px;z-index:1}
 .widget_product_search label{clear:both;width:100%}
 .widget_product_search .search-field{width:100%;display:inline-block;padding-left:30px}
 .widget_product_search input[type="submit"]{width:38%;display:none}
@@ -4333,7 +4334,7 @@ a img.aligncenter{display:block;margin-right:auto;margin-left:auto}
 .wp-caption img{border:0 none;height:auto;margin:0;max-width:98.5%;padding:0;width:auto}
 .wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 5px}
 .sticky .post-title{position:relative}
-.sticky .post-title::before{position:absolute;content:"\f005";display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:1rem;right:-25px;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);color:#d7b748}
+.sticky .post-title::before{position:absolute;content:"\f005";display:inline-block;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:1rem;right:-25px;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);color:#d7b748}
 .gallery .gallery-caption{color:#888;font-size:12px;margin:0 0 12px}
 .gallery{margin-bottom:1.6em}
 .gallery-item{display:inline-block;padding:1.79104477%;text-align:center;vertical-align:top;width:100%}
@@ -4397,7 +4398,7 @@ a img.aligncenter{display:block;margin-right:auto;margin-left:auto}
 .search-form .search-submit{width:auto}
 .widget_search .search-form .search-submit{background:0;border:0;width:52px;height:52px;display:block;text-indent:-9999px;position:absolute;z-index:2;left:0;top:0;cursor:pointer;line-height:0;-webkit-box-shadow:none;box-shadow:none;margin-bottom:0}
 .widget_search .search-form .search-submit:hover{background:0;-webkit-box-shadow:none;box-shadow:none}
-.search-form label::before{display:block;font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;content:"";position:absolute;left:20px;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);color:#dee2e6;font-size:14px;z-index:1}
+.search-form label::before{display:block;text-decoration:inherit;content:"";position:absolute;left:20px;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);color:#dee2e6;font-size:14px;z-index:1}
 .widget_search i{width:17px;height:17px;display:block;position:absolute;left:12px;top:12px;cursor:pointer;font-size:1em;color:#dee2e6}
 #footer .search-form .search-field{background-color:transparent;border-color:#adb5bd;color:#dee2e6}
 #footer .widget_search .search-field:focus{border-color:#adb5bd;-webkit-box-shadow:none;box-shadow:none}

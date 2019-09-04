@@ -80,6 +80,11 @@ jQuery(document).ready(function($) {
                 $(".woocommerce-product-gallery")
                     .data("flexslider")
                     .resize();
+                setTimeout(function() {
+                    $(".woocommerce-product-gallery")
+                        .data("flexslider")
+                        .resize();
+                }, 200);
             }
         }
     );

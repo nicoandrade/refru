@@ -313,9 +313,8 @@ Single Documentation
         height: 20px;
         line-height: 20px;
         display: inline-block;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
+        @extend %fa-icon;
+        @extend .far;
         text-decoration: inherit;
         content: "";
         color: #b3b3b3;
@@ -367,9 +366,8 @@ Single Documentation
     height: 30px;
     line-height: 30px;
     display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    @extend %fa-icon;
+    @extend .far;
     text-decoration: none;
     content: "";
     color: #fff;
@@ -437,9 +435,8 @@ a[href="#top"] {
                 height: 16px;
                 line-height: 16px;
                 display: inline-block;
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: normal;
+                @extend %fa-icon;
+                @extend .far;
                 text-decoration: none;
                 content: "";
                 font-size: 14px;

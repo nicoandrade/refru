@@ -24,6 +24,9 @@ Refru is a fast WooCommerce storefront, ideal for create a creative shop online 
 
 == Changelog ==
 
+= 1.0.3 - Developing... =
+* Fixed: FontAwesome loading files
+
 = 1.0.2 - 03/09/2019 =
 * Fixed: Documentation URL
 * Fixed: JS script load name

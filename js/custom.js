@@ -159,6 +159,9 @@ jQuery(document).ready(function ($) {
     if ($(".woocommerce-product-gallery").length) {
       // Resize WooCommerce Single Product Slider
       $(".woocommerce-product-gallery").data("flexslider").resize();
+      setTimeout(function () {
+        $(".woocommerce-product-gallery").data("flexslider").resize();
+      }, 200);
     }
   });
   /*

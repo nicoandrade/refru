@@ -134,7 +134,7 @@ Sub Footer - Extra Small
 Social Nav
 -------------------------------------------- */
 .nav_social,
-.widget [id^="menu-social"] {
+[id^="menu-social"] {
     position: relative;
     text-align: center;
     margin-bottom: 0;
@@ -175,16 +175,9 @@ Social Nav
             }
 
             &::before {
-                display: inline-block;
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: normal;
-                text-rendering: auto; // optimizelegibility throws things off #1094
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                text-decoration: inherit;
+                @extend %fa-icon;
+                @extend .fab;
                 font-size: 18px;
-                line-height: 1em;
                 width: 18px;
                 height: 18px;
                 color: #fff;
@@ -553,7 +546,8 @@ Social Nav Brands Colors
 
 .nav_social li a[href*="mailto:"]::before,
 [id^="menu-social"] li a[href*="mailto:"]::before {
-    content: "\f003";
+    @extend .far;
+    content: "\f0e0";
 }
 
 .nav_social li a[href*="mailto:"]:hover,

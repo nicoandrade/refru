@@ -89,7 +89,8 @@ a img.aligncenter {
         position: absolute;
         content: "\f005";
         display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
+        @extend %fa-icon;
+        @extend .far;
         font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
@@ -481,9 +482,8 @@ a img.aligncenter {
 
 .search-form label::before {
     display: block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    @extend %fa-icon;
+    @extend .far;
     text-decoration: inherit;
     content: "";
     position: absolute;

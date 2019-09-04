@@ -110,9 +110,8 @@
 
 #sidebar .woocommerce-product-search::before {
     display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    @extend %fa-icon;
+    @extend .far;
     text-decoration: inherit;
     content: "";
     position: absolute;
