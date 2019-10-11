@@ -57,6 +57,21 @@
     margin-bottom: 1em;
 }
 
+// Aspect Ratio on Videos
+figure.wp-block-embed.is-type-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /*16:9*/
+}
+figure.wp-block-embed.is-type-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @include media-breakpoint-only(xs) {
     /* Unconstrained main colum */
     .entry-content > *:not(.alignwide):not(.alignfull) {

@@ -215,6 +215,12 @@ a img.aligncenter {
     overflow: hidden;
 }
 
+// Big Font Size
+.has-large-font-size,
+p[style="font-size:46px"] {
+    line-height: 100%;
+}
+
 /*------------------------------------------------------------
  Defaul Widgets
 -------------------------------------------------------------- */
