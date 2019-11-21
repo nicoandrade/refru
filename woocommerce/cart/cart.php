@@ -12,7 +12,7 @@
      *
      * @see     https://docs.woocommerce.com/document/template-structure/
      * @package WooCommerce/Templates
-     * @version 3.7.0
+     * @version 3.8.0
      */
 
     defined( 'ABSPATH' ) || exit;
@@ -35,7 +35,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                 ?>
 
         <li
-            class="woocommerce-cart-form__cart-item                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+            class="woocommerce-cart-form__cart-item                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
             <?php
                 // @codingStandardsIgnoreLine
                         echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(

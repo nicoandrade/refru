@@ -7,10 +7,10 @@ function refru_import_files() {
         array(
             'import_file_name'           => esc_attr__( 'Demo 1 - Default', 'refru' ),
             'categories'                 => array(),
-            'import_file_url'            => 'https://www.quemalabs.com/files/import-files/refru/demo-1/content.xml',
-            'import_widget_file_url'     => 'https://www.quemalabs.com/files/import-files/refru/demo-1/widgets.wie',
-            'import_customizer_file_url' => 'https://www.quemalabs.com/files/import-files/refru/demo-1/customizer.dat',
-            'import_preview_image_url'   => 'https://www.quemalabs.com/files/import-files/refru/demo-1/screenshot.png',
+            'import_file_url'            => 'https://admin.quemalabs.com/files/import-files/refru/demo-1/content.xml',
+            'import_widget_file_url'     => 'https://admin.quemalabs.com/files/import-files/refru/demo-1/widgets.wie',
+            'import_customizer_file_url' => 'https://admin.quemalabs.com/files/import-files/refru/demo-1/customizer.dat',
+            'import_preview_image_url'   => 'https://admin.quemalabs.com/files/import-files/refru/demo-1/screenshot.png',
             'import_notice'              => esc_html__( 'Click on "Import Demo Data" to start importing. Images were replaced by a placeholder to avoid long waits.', 'refru' ),
         ),
     );

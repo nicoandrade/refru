@@ -2,7 +2,7 @@
 Theme Name: Refru
 Theme URI: https://www.quemalabs.com/theme/refru/
 Description: Refru is a fast WooCommerce storefront, ideal for create a creative shop online or a referral business from sites like Amazon or AliExpress. Very flexible theme that takes Gutenberg and the Customizer to the next level.
-Version: 1.0.2
+Version: 1.0.3
 Author: Quema Labs
 Author URI: https://www.quemalabs.com/
 License: GNU General Public License v2 or later
@@ -1213,8 +1213,8 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .text-reset{color:inherit !important}
 .visible{visibility:visible !important}
 .invisible{visibility:hidden !important}
-/*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */.fa,.fas,.post-image a::after,.far,.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a[href*="mailto:"]::before,[id^="menu-social"] li a[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .comment-reply-link::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before,.fal,.fad,.fab,.nav_social li a::before,.widget [id^="menu-social"] li a::before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
-.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a::before,.widget [id^="menu-social"] li a::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;font-style:normal;font-variant:normal;font-weight:normal;line-height:1}
+/*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */.fa,.fas,.post-image a::after,.far,.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a[href*="mailto:"]::before,[id^="menu-social"] li a[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .comment-reply-link::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before,.fal,.fad,.fab,.nav_social li a::before,[id^="menu-social"] li a::before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+.header-widget-area .widget_recent_comments ul li::before,.widget_recent_comments ul li::before,.nav_social li a::before,[id^="menu-social"] li a::before,#sidebar .woocommerce-product-search::before,.sticky .post-title::before,.search-form label::before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;font-style:normal;font-variant:normal;font-weight:normal;line-height:1}
 .fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}
 .fa-xs{font-size:.75em}
 .fa-sm{font-size:.875em}
@@ -1235,8 +1235,8 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}
 .fa-pull-left{float:right}
 .fa-pull-right{float:left}
-.fa.fa-pull-left,.fas.fa-pull-left,.post-image a.fa-pull-left::after,.far.fa-pull-left,.widget_recent_comments ul li.fa-pull-left::before,.nav_social li a.fa-pull-left[href*="mailto:"]::before,[id^="menu-social"] li a.fa-pull-left[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .fa-pull-left.comment-reply-link::before,#sidebar .fa-pull-left.woocommerce-product-search::before,.sticky .fa-pull-left.post-title::before,.search-form label.fa-pull-left::before,.fal.fa-pull-left,.fab.fa-pull-left,.nav_social li a.fa-pull-left::before,.widget [id^="menu-social"] li a.fa-pull-left::before{margin-left:.3em}
-.fa.fa-pull-right,.fas.fa-pull-right,.post-image a.fa-pull-right::after,.far.fa-pull-right,.widget_recent_comments ul li.fa-pull-right::before,.nav_social li a.fa-pull-right[href*="mailto:"]::before,[id^="menu-social"] li a.fa-pull-right[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .fa-pull-right.comment-reply-link::before,#sidebar .fa-pull-right.woocommerce-product-search::before,.sticky .fa-pull-right.post-title::before,.search-form label.fa-pull-right::before,.fal.fa-pull-right,.fab.fa-pull-right,.nav_social li a.fa-pull-right::before,.widget [id^="menu-social"] li a.fa-pull-right::before{margin-right:.3em}
+.fa.fa-pull-left,.fas.fa-pull-left,.post-image a.fa-pull-left::after,.far.fa-pull-left,.widget_recent_comments ul li.fa-pull-left::before,.nav_social li a.fa-pull-left[href*="mailto:"]::before,[id^="menu-social"] li a.fa-pull-left[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .fa-pull-left.comment-reply-link::before,#sidebar .fa-pull-left.woocommerce-product-search::before,.sticky .fa-pull-left.post-title::before,.search-form label.fa-pull-left::before,.fal.fa-pull-left,.fab.fa-pull-left,.nav_social li a.fa-pull-left::before,[id^="menu-social"] li a.fa-pull-left::before{margin-left:.3em}
+.fa.fa-pull-right,.fas.fa-pull-right,.post-image a.fa-pull-right::after,.far.fa-pull-right,.widget_recent_comments ul li.fa-pull-right::before,.nav_social li a.fa-pull-right[href*="mailto:"]::before,[id^="menu-social"] li a.fa-pull-right[href*="mailto:"]::before,.comment-list .comment .comment-body .reply .fa-pull-right.comment-reply-link::before,#sidebar .fa-pull-right.woocommerce-product-search::before,.sticky .fa-pull-right.post-title::before,.search-form label.fa-pull-right::before,.fal.fa-pull-right,.fab.fa-pull-right,.nav_social li a.fa-pull-right::before,[id^="menu-social"] li a.fa-pull-right::before{margin-right:.3em}
 .fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}
 .fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}
 @keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
@@ -2645,7 +2645,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 /*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;font-display:auto;src:url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.eot");src:url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg")}
 .fa,.fas,.post-image a::after{font-family:'Font Awesome 5 Free';font-weight:900}
 /*! Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;font-display:auto;src:url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.eot");src:url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"),url("assets/css/vendor/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg")}
-.fab,.nav_social li a::before,.widget [id^="menu-social"] li a::before{font-family:'Font Awesome 5 Brands'}
+.fab,.nav_social li a::before,[id^="menu-social"] li a::before{font-family:'Font Awesome 5 Brands'}
 @font-face{font-family:"quemalabs-font";src:url("assets/css/vendor/quemalabs-font/fonts/quemalabs-font.ttf?6zw6tb") format("truetype"),url("assets/css/vendor/quemalabs-font/fonts/quemalabs-font.woff?6zw6tb") format("woff"),url("assets/css/vendor/quemalabs-font/fonts/quemalabs-font.svg?6zw6tb#quemalabs-font") format("svg");font-weight:normal;font-style:normal}
 [class^="ql-icon-"],[class*=" ql-icon-"]{font-family:"quemalabs-font" !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .ql-icon-cheap_2:before{content:"\e91d"}
@@ -3067,12 +3067,12 @@ body.page-template-default.refru-with-sidebar #content{width:70%}
 @media(max-width:575.98px){.sub-footer{-ms-flex-wrap:wrap;flex-wrap:wrap}
 .sub-footer .sub-footer-copy{width:100%;text-align:center}
 .sub-footer .sub-footer-social-menu{margin-top:20px;width:100%}
-}.nav_social,.widget [id^="menu-social"]{position:relative;text-align:center;margin-bottom:0;padding-right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.nav_social li,.widget [id^="menu-social"] li{text-align:center;position:relative;display:inline-block;margin-right:10px}
-.nav_social li a,.widget [id^="menu-social"] li a{padding:0;overflow:hidden;display:block;position:relative;width:35px;height:35px;line-height:35px;color:#dee2e6;-webkit-transition:background 200ms;transition:background 200ms;text-decoration:none;text-align:center;font-weight:normal;border-radius:3px}
-.nav_social li a:hover,.widget [id^="menu-social"] li a:hover{color:#fff}
-.nav_social li a:hover::before,.widget [id^="menu-social"] li a:hover::before{color:#fff !important;-webkit-animation:social_icons_anim 500ms ease;animation:social_icons_anim 500ms ease}
-.nav_social li a::before,.widget [id^="menu-social"] li a::before{font-size:18px;width:18px;height:18px;color:#fff;color:inherit;text-decoration:none !important}
+}.nav_social,[id^="menu-social"]{position:relative;text-align:center;margin-bottom:0;padding-right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.nav_social li,[id^="menu-social"] li{text-align:center;position:relative;display:inline-block;margin-right:10px}
+.nav_social li a,[id^="menu-social"] li a{padding:0;overflow:hidden;display:block;position:relative;width:35px;height:35px;line-height:35px;color:#dee2e6;-webkit-transition:background 200ms;transition:background 200ms;text-decoration:none;text-align:center;font-weight:normal;border-radius:3px}
+.nav_social li a:hover,[id^="menu-social"] li a:hover{color:#fff}
+.nav_social li a:hover::before,[id^="menu-social"] li a:hover::before{color:#fff !important;-webkit-animation:social_icons_anim 500ms ease;animation:social_icons_anim 500ms ease}
+.nav_social li a::before,[id^="menu-social"] li a::before{font-size:18px;width:18px;height:18px;color:#fff;color:inherit;text-decoration:none !important}
 @media(max-width:575.98px){.nav_social{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 }.widget [id^="menu-social"]{padding-right:0;list-style:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .widget [id^="menu-social"] li a{width:50px;height:50px;line-height:58px;padding:0 !important;vertical-align:middle;color:#4662ef}
@@ -3781,6 +3781,8 @@ table.order_details tbody .order_item strong{margin-right:5px}
 .wp-block-image figure.alignleft,.wp-block-image figure.alignright{display:table}
 .wp-block-image figure.alignleft figcaption,.wp-block-image figure.alignright figcaption{display:table-caption;caption-side:bottom}
 .wp-block-image figure.alignright figcaption,.wp-block-image figure.alignleft figcaption{font-size:75%;color:gray;margin-bottom:1em}
+figure.wp-block-embed.is-type-video{position:relative;width:100%;height:0;padding-bottom:56.25%}
+figure.wp-block-embed.is-type-video iframe{position:absolute;top:0;right:0;width:100%;height:100%}
 @media(max-width:575.98px){.entry-content>*:not(.alignwide):not(.alignfull){max-width:85%}
 }/*! animate.css -http://daneden.me/animate Version - 3.6.0 Licensed under the MIT license - http://opensource.org/licenses/MIT Copyright (c) 2018 Daniel Eden */.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
@@ -4354,6 +4356,7 @@ a img.aligncenter{display:block;margin-right:auto;margin-left:auto}
 .password_p input:focus{background:#333}
 .password_p input[type="submit"]{display:inline-block;color:#7a7a7a;text-shadow:0 1px 0 #000;margin-top:0;font-size:13px;line-height:20px;background:#3b3a3a;padding:5px 7px;width:70px}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
+.has-large-font-size,p[style="font-size:46px"]{line-height:100%}
 .widget_archive ul li a{display:inline-block !important}
 .widget_archive ul li a:hover{background-color:transparent !important}
 .widget select{font-size:.875rem;max-width:100%}
