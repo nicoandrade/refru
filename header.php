@@ -31,6 +31,11 @@
             <div class="refru-double-bounce2"></div>
         </div>
     </div>
+    <?php
+        if ( is_single() ) {
+            echo '<a class="skip-link screen-reader-text" href="#content">' . esc_html__( 'Skip to content', 'refru' ) . '</a>';
+        }
+    ?>
     <div class="refru-site-wrap">
 
         <?php

@@ -8,7 +8,7 @@
         justify-content: flex-start;
 
         li.product {
-            width: 31.3%;
+            width: 31.2%;
             margin: 1%;
             position: relative;
             float: none;
@@ -63,7 +63,6 @@
                     display: block;
                     margin-top: 0;
                     font-size: 0.9375rem;
-                    outline: none;
                     text-align: center;
                     order: 2;
                     background-color: transparent;
@@ -273,7 +272,7 @@
         // 5 Columns
         &.columns-5 {
             li.product {
-                width: 18%;
+                width: 17.9%;
 
                 .product_text {
                     .button {
@@ -291,14 +290,14 @@
         // 4 Columns
         &.columns-4 {
             li.product {
-                width: 23%;
+                width: 22.9%;
             }
         }
 
         // 3 Columns
         &.columns-3 {
             li.product {
-                width: 31.3%;
+                width: 31.2%;
             }
         }
 

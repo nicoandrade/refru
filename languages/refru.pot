@@ -58,15 +58,15 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: comments.php:116
+#: comments.php:115
 msgid "Name"
 msgstr ""
 
-#: comments.php:125
+#: comments.php:124
 msgid "Email"
 msgstr ""
 
-#: comments.php:134
+#: comments.php:132
 msgid "Website"
 msgstr ""
 
@@ -82,7 +82,11 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: header.php:49, inc/customizer.php:572, inc/customizer.php:578
+#: header.php:36
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:54, inc/customizer.php:572, inc/customizer.php:578
 msgid "We find the best deals to save you time"
 msgstr ""
 
