@@ -1,7 +1,7 @@
 # Refru 
 **Contributors:** nicoandrade  
 **Author:** Quema Labs  
-**Tags:** e-commerce, blog, featured-images, two-columns, threaded-comments, custom-menu, left-sidebar, sticky-post, translation-ready, custom-background, full-width-template, rtl-language-support, theme-options  
+**Tags:** e-commerce, two-columns, custom-background, threaded-comments, custom-menu, featured-images, sticky-post, translation-ready, rtl-language-support, theme-options, custom-colors, footer-widgets, grid-layout, wide-blocks  
 **Requires at least:** 4.9.6  
 **Tested up to:** WordPress 5.3.2  
 **Stable tag:** 1.0.4  
@@ -23,6 +23,10 @@ Refru is a fast WooCommerce storefront, ideal for create a creative shop online 
 
 
 ## Changelog 
+
+#### 1.0.5 - 30/12/2019 
+* Fixed: Tags on readme file and style.css
+* Removed: Widget areas without use
 
 #### 1.0.4 - 28/12/2019 
 * Fixed: Shop columns on Safari

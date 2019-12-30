@@ -2,12 +2,12 @@
 Theme Name: Refru
 Theme URI: https://www.quemalabs.com/theme/refru/
 Description: Refru is a fast WooCommerce storefront, ideal for create a creative shop online or a referral business from sites like Amazon or AliExpress. Very flexible theme that takes Gutenberg and the Customizer to the next level.
-Version: 1.0.4
+Version: 1.0.5
 Author: Quema Labs
 Author URI: https://www.quemalabs.com/
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Tags: e-commerce, two-columns, custom-background, threaded-comments, custom-menu, featured-images, sticky-post, translation-ready
+Tags: e-commerce, two-columns, custom-background, threaded-comments, custom-menu, featured-images, sticky-post, translation-ready, rtl-language-support, theme-options, custom-colors, footer-widgets, grid-layout, wide-blocks
 Text Domain: refru
 *//*! Bootstrap (https://getbootstrap.com/) */:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#4662ef;--secondary:#2fc77c;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
 *,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}
@@ -2737,7 +2737,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 #header .refru-logo-wrap .site-title img.lazyload{max-height:30px}
 #header .refru-main-nav-wrap{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2;text-align:left}
 #header .refru-main-nav-wrap .navbar-collapse{padding:0}
-#header .refru-icons-nav-wrap{-ms-flex-preferred-size:fit-content;flex-basis:fit-content;position:relative;margin-right:10px;padding-right:10px}
+#header .refru-icons-nav-wrap{-ms-flex-preferred-size:fit-content;flex-basis:fit-content;position:relative;margin-right:10px;padding-right:10px;color:#8a8a8a}
 #header .refru-icons-nav-wrap::before{position:absolute;content:"";top:50%;right:0;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);background-color:rgba(0,0,0,0.1);width:1px;height:25px}
 #header .refru-icons-nav-wrap ul{list-style:none;margin:0;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #header .refru-icons-nav-wrap ul li{display:inline-block}
@@ -2799,7 +2799,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 #header .refru-icons-nav-wrap .icons-navigation.toggled-on ul{display:block}
 .js_active #header .refru-social-icons-nav-wrap .nav_social{display:none}
 #header .refru-social-icons-nav-wrap .nav_social.toggled-on{display:block}
-}.main-navigation{clear:both;display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-size:.875rem}
+}.main-navigation{clear:both;display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-size:.875rem;color:#8a8a8a}
 .main-navigation ul{color:inherit;background:#151515;list-style:none;margin:0;padding:0 1.5em}
 .main-navigation ul ul{padding:0 1.5em .71428571428571em 0;text-align:right}
 .main-navigation ul ul.toggled-on{display:block}

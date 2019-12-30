@@ -798,34 +798,6 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: inc/widget-areas/widget-areas.php:22
-msgid "Side Panel Area"
-msgstr ""
-
-#: inc/widget-areas/widget-areas.php:36
-msgid "First Footer Widgets Area"
-msgstr ""
-
-#: inc/widget-areas/widget-areas.php:38
-msgid "These are widgets for the first footer area"
-msgstr ""
-
-#: inc/widget-areas/widget-areas.php:46
-msgid "Second Footer Widgets Area"
-msgstr ""
-
-#: inc/widget-areas/widget-areas.php:48
-msgid "These are widgets for the second footer area"
-msgstr ""
-
-#: inc/widget-areas/widget-areas.php:56
-msgid "Third Footer Widgets Area"
-msgstr ""
-
-#: inc/widget-areas/widget-areas.php:58
-msgid "These are widgets for the third footer area"
-msgstr ""
-
 #: inc/woocommerce/woocommerce-support.php:109
 msgid "Shop Sidebar 2"
 msgstr ""
