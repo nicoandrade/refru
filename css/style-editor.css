@@ -1,1 +1,6 @@
-.components-icon-button{overflow:hidden}
+/**
+ * Styles for the WordPress post/page editor.
+ * Ensures a visual match between back- and front-end.
+ */
+.components-icon-button {
+  overflow: hidden; }

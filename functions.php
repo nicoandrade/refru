@@ -103,7 +103,7 @@ if ( ! function_exists( 'refru_setup' ) ):
                 'action' => 'refru_dynamic_editor_styles',
                 'token'  => wp_create_nonce( 'refru-dynamic-editor-style' ),
             ),
-            admin_url( 'admin-ajax.php' )
+            esc_url( admin_url( 'admin-ajax.php' ) )
         );
 
         // Adds all the Custom Styles for the Editor at once
@@ -129,6 +129,9 @@ add_action( 'after_setup_theme', 'refru_setup' );
  * @global int $content_width
  */
 function refru_content_width() {
+    // This variable is intended to be overruled from themes.
+    // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+    // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
     $GLOBALS['content_width'] = apply_filters( 'refru_content_width', 780 );
 }
 add_action( 'after_setup_theme', 'refru_content_width', 0 );
@@ -247,9 +250,6 @@ require get_template_directory() . '/inc/theme-functions/ajax-functions.php';
 
 // Retina Logo
 require get_template_directory() . '/inc/theme-functions/retina-logo.php';
-
-// Demo Import Data
-require get_template_directory() . '/inc/theme-functions/demo-import-data.php';
 
 // Menu Walker
 require get_template_directory() . '/inc/theme-functions/menu-walker.php';

@@ -35,7 +35,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                 ?>
 
         <li
-            class="woocommerce-cart-form__cart-item                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+            class="woocommerce-cart-form__cart-item                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
             <?php
                 // @codingStandardsIgnoreLine
                         echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
@@ -117,7 +117,7 @@ do_action( 'woocommerce_before_cart' ); ?>
             <input type="text" name="coupon_code" class="input-text" id="coupon_code" value=""
                 placeholder="<?php esc_attr_e( 'Coupon code', 'refru' ); ?>" /> <button type="submit" class="button"
                 name="apply_coupon"
-                value="<?php esc_attr_e( 'Apply coupon', 'refru' ); ?>"><?php esc_attr_e( 'Apply coupon', 'refru' ); ?></button>
+                value="<?php esc_attr_e( 'Apply coupon', 'refru' ); ?>"><?php esc_html_e( 'Apply coupon', 'refru' ); ?></button>
             <?php do_action( 'woocommerce_cart_coupon' ); ?>
         </div>
         <?php } ?>

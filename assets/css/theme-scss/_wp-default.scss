@@ -1,5 +1,11 @@
 /* =WordPress Core
 -------------------------------------------------------------- */
+.entry-content p:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .alignnone {
     margin: 5px 20px 20px 0;
 }
@@ -501,6 +507,22 @@ p[style="font-size:46px"] {
     width: auto;
 }
 
+.search-form label::before {
+    display: block;
+    @extend %fa-icon;
+    @extend .far;
+    text-decoration: inherit;
+    @include ql-font;
+    content: "\e922";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: $gray-400;
+    font-size: 14px;
+    z-index: 1;
+}
+
 .widget_search .search-form .search-submit {
     background: none;
     border: none;
@@ -521,21 +543,6 @@ p[style="font-size:46px"] {
         background: none;
         box-shadow: none;
     }
-}
-
-.search-form label::before {
-    display: block;
-    @extend %fa-icon;
-    @extend .far;
-    text-decoration: inherit;
-    content: "";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translate(0, -50%);
-    color: $gray-300;
-    font-size: 14px;
-    z-index: 1;
 }
 
 .widget_search i {

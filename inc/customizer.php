@@ -36,7 +36,8 @@ function refru_default_customizer_settings( $wp_customize ) {
     $wp_customize->add_setting( 'refru_probtn', array( 'default' => '', 'sanitize_callback' => 'refru_sanitize_text' ) );
     $wp_customize->add_control( new refru_Display_Text_Control( $wp_customize, 'refru_probtn', array(
         'section' => 'refru_pro_section', // Required, core or custom.
-         'label'   => sprintf( __( 'Check out the PRO version for more features. %1$s Go Pro %2$s', 'refru' ), '<a target="_blank" class="button" href="https://www.quemalabs.com/theme/refru-pro/" style="margin: 10px auto; display: block; text-align: center;">', '</a>' ),
+         /* translators: %1$s: open anchor %2$s: closing anchor */
+        'label'   => sprintf( __( 'Check out the PRO version for more features. %1$s Go Pro %2$s', 'refru' ), '<a target="_blank" class="button" href="https://www.quemalabs.com/theme/refru-pro/" style="margin: 10px auto; display: block; text-align: center;">', '</a>' ),
     ) ) );
 }
 add_action( 'customize_register', 'refru_default_customizer_settings' );
@@ -681,7 +682,8 @@ function refru_no_kirki( $wp_customize ) {
     $wp_customize->add_setting( 'refru_site_not_kirki', array( 'default' => '', 'sanitize_callback' => 'refru_sanitize_text' ) );
     $wp_customize->add_control( new refru_Display_Text_Control( $wp_customize, 'refru_site_not_kirki', array(
         'section' => 'refru_no_kirki_section', // Required, core or custom.
-         'label'   => sprintf( esc_html__( 'To access Site Options make sure you have installed the %1$s Kirki Toolkit %2$s plugin.', 'refru' ), '<a href="' . get_admin_url( null, 'themes.php?page=tgmpa-install-plugins' ) . '">', '</a>' ),
+         /* translators: %1$s: open anchor %2$s: closing anchor */
+        'label'   => sprintf( esc_html__( 'To access Site Options make sure you have installed the %1$s Kirki Toolkit %2$s plugin.', 'refru' ), '<a href="' . esc_url( get_admin_url( null, 'themes.php?page=tgmpa-install-plugins' ) ) . '">', '</a>' ),
     ) ) );
 }
 
@@ -724,9 +726,9 @@ add_action( 'customize_register', 'refru_customize_register' );
 function refru_customize_preview_js() {
 
     wp_register_script( 'refru_customizer_preview', get_template_directory_uri() . '/js/customizer-preview.js', array( 'customize-preview' ), '20151024', true );
-    wp_localize_script( 'refru_customizer_preview', 'wp_customizer', array(
-        'ajax_url'  => admin_url( 'admin-ajax.php' ),
-        'theme_url' => get_template_directory_uri(),
+    wp_localize_script( 'refru_customizer_preview', 'refru_wp_customizer', array(
+        'ajax_url'  => esc_url( admin_url( 'admin-ajax.php' ) ),
+        'theme_url' => esc_url( get_template_directory_uri() ),
         'site_name' => get_bloginfo( 'name' ),
     ) );
     wp_enqueue_script( 'refru_customizer_preview' );
@@ -774,24 +776,10 @@ function refru_pro_version( $input ) {
 }
 
 /**
- * Sanitize Any
- */
-function refru_sanitize_any( $input ) {
-    return $input;
-}
-
-/**
  * Sanitize Text
  */
 function refru_sanitize_text( $str ) {
     return sanitize_text_field( $str );
-}
-
-/**
- * Sanitize URL
- */
-function refru_sanitize_url( $url ) {
-    return esc_url( $url );
 }
 
 /**
@@ -914,20 +902,4 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 
         }
     }
-}
-
-/*
- * AJAX call to retreive an image URI by its ID
- */
-add_action( 'wp_ajax_nopriv_refru_get_image_src', 'refru_get_image_src' );
-add_action( 'wp_ajax_refru_get_image_src', 'refru_get_image_src' );
-
-function refru_get_image_src() {
-    if ( isset( $_POST['image_id'] ) ) {
-        $image_id = sanitize_text_field( wp_unslash( $_GET['image_id'] ) );
-    }
-    $image = wp_get_attachment_image_src( absint( $image_id ), 'full' );
-    $image = $image[0];
-    echo wp_kses_post( $image );
-    die();
 }

@@ -38,22 +38,3 @@ function refru_infinite_scroll_render() {
         get_template_part( 'template-parts/content', get_post_format() );
     }
 } // end function refru_infinite_scroll_render
-
-/**
- * Remove sharing from content
- */
-function refru_remove_share() {
-    //remove_filter( 'the_content', 'sharing_display', 19 );
-    //remove_filter( 'the_excerpt', 'sharing_display', 19 );
-    if ( class_exists( 'Jetpack_Likes' ) ) {
-        //remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
-    }
-}
-
-add_action( 'loop_start', 'refru_remove_share' );
-
-// function refru_exclude_class_from_lazy_load( $classes ) {
-//     $classes[] = 'product_second_img';
-//     return $classes;
-// }
-// add_filter( 'jetpack_lazy_images_blacklisted_classes', 'refru_exclude_class_from_lazy_load', 999, 1 );

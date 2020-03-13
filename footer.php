@@ -24,8 +24,8 @@
 
         <div class="sub-footer-copy">
 
-            <p><?php esc_html_e( '&copy; Copyright', 'refru' ); ?><?php echo ' ' . esc_html( date( 'Y' ) ); ?> <a
-                    rel="nofollow"
+            <p><?php esc_html_e( '&copy; Copyright', 'refru' ); ?><?php echo ' ' . esc_html( date_i18n( __( 'Y', 'refru' ) ) ); ?>
+                <a rel="nofollow"
                     href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( bloginfo( 'name' ) ); ?></a>
             </p>
         </div>

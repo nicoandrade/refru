@@ -3,11 +3,7 @@
     ?>
 <aside id="sidebar" class="woocommerce-sidebar">
 
-    <?php
-            if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 'shop-sidebar' ) ): else:
-
-                endif;
-            ?>
+    <?php dynamic_sidebar( 'shop-sidebar' ); ?>
 
     <div class="clearfix"></div>
 </aside>

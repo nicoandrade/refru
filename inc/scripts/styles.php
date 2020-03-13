@@ -171,22 +171,22 @@ function refru_get_custom_css( $colors ) {
 
     $heroColor_darker = refru_darken_color( $colors['heroColor'], 1.1 );
     $link_color_darker = refru_darken_color( $colors['link_color'], 1.2 );
-    $heroColor_rgb = hex2rgb( $colors['heroColor'] );
+    $heroColor_rgb = refru_hex2rgb( $colors['heroColor'] );
 
     // Custom CSS for the current page only
-    $refru_header_bck_color = rwmb_meta( 'refru_header_bck_color' );
-    $refru_header_logo_color = rwmb_meta( 'refru_header_logo_color' );
-    $refru_header_text_color = rwmb_meta( 'refru_header_text_color' );
-    $refru_header_hover_color = rwmb_meta( 'refru_header_hover_color' );
-    $refru_header_mobile_menu_bck_color = rwmb_meta( 'refru_header_mobile_menu_bck_color' );
+    $refru_header_bck_color = esc_attr( rwmb_meta( 'refru_header_bck_color' ) );
+    $refru_header_logo_color = esc_attr( rwmb_meta( 'refru_header_logo_color' ) );
+    $refru_header_text_color = esc_attr( rwmb_meta( 'refru_header_text_color' ) );
+    $refru_header_hover_color = esc_attr( rwmb_meta( 'refru_header_hover_color' ) );
+    $refru_header_mobile_menu_bck_color = esc_attr( rwmb_meta( 'refru_header_mobile_menu_bck_color' ) );
     // If is Shop page we need to pass the page ID
     if ( function_exists( 'is_shop' ) && is_shop() ) {
         $shop_id = get_option( 'woocommerce_shop_page_id' );
-        $refru_header_bck_color = rwmb_meta( 'refru_header_bck_color', '', $shop_id );
-        $refru_header_logo_color = rwmb_meta( 'refru_header_logo_color', '', $shop_id );
-        $refru_header_text_color = rwmb_meta( 'refru_header_text_color', '', $shop_id );
-        $refru_header_hover_color = rwmb_meta( 'refru_header_hover_color', '', $shop_id );
-        $refru_header_mobile_menu_bck_color = rwmb_meta( 'refru_header_mobile_menu_bck_color', '', $shop_id );
+        $refru_header_bck_color = esc_attr( rwmb_meta( 'refru_header_bck_color', '', $shop_id ) );
+        $refru_header_logo_color = esc_attr( rwmb_meta( 'refru_header_logo_color', '', $shop_id ) );
+        $refru_header_text_color = esc_attr( rwmb_meta( 'refru_header_text_color', '', $shop_id ) );
+        $refru_header_hover_color = esc_attr( rwmb_meta( 'refru_header_hover_color', '', $shop_id ) );
+        $refru_header_mobile_menu_bck_color = esc_attr( rwmb_meta( 'refru_header_mobile_menu_bck_color', '', $shop_id ) );
     }
 
     $css = <<<CSS

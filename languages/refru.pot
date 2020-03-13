@@ -1,4 +1,4 @@
-# Copyright (C) 2019 refru
+# Copyright (C) 2020 refru
 # This file is distributed under the same license as the refru package.
 msgid ""
 msgstr ""
@@ -74,6 +74,10 @@ msgstr ""
 msgid "&copy; Copyright"
 msgstr ""
 
+#: footer.php:27
+msgid "Y"
+msgstr ""
+
 #: functions.php:59
 msgid "Primary Menu"
 msgstr ""
@@ -82,11 +86,11 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: header.php:36
+#: header.php:42
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:54, inc/customizer.php:572, inc/customizer.php:578
+#: header.php:59, inc/customizer.php:573, inc/customizer.php:579
 msgid "We find the best deals to save you time"
 msgstr ""
 
@@ -98,163 +102,165 @@ msgstr ""
 msgid "Refru Pro"
 msgstr ""
 
-#: inc/customizer.php:39
+#. translators: %1$s: open anchor %2$s: closing anchor
+#: inc/customizer.php:40
 msgid "Check out the PRO version for more features. %1$s Go Pro %2$s"
 msgstr ""
 
-#: inc/customizer.php:78
+#: inc/customizer.php:79
 msgid "Featured Color"
 msgstr ""
 
-#: inc/customizer.php:104
+#: inc/customizer.php:105
 msgid "Headings Color"
 msgstr ""
 
-#: inc/customizer.php:122
+#: inc/customizer.php:123
 msgid "Text Color"
 msgstr ""
 
-#: inc/customizer.php:140
+#: inc/customizer.php:141
 msgid "Link Color"
 msgstr ""
 
-#: inc/customizer.php:158
+#: inc/customizer.php:159
 msgid "Footer Colors"
 msgstr ""
 
-#: inc/customizer.php:168
+#: inc/customizer.php:169
 msgid "Sub Footer Background Color"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:190
 msgid "Sub Footer Text Color"
 msgstr ""
 
-#: inc/customizer.php:210
+#: inc/customizer.php:211
 msgid "Sub Footer Social Color"
 msgstr ""
 
-#: inc/customizer.php:231
+#: inc/customizer.php:232
 msgid "Header Colors"
 msgstr ""
 
-#: inc/customizer.php:241
+#: inc/customizer.php:242
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/customizer.php:266
+#: inc/customizer.php:267
 msgid "Logo Color"
 msgstr ""
 
-#: inc/customizer.php:284
+#: inc/customizer.php:285
 msgid "Header Text Color"
 msgstr ""
 
-#: inc/customizer.php:310
+#: inc/customizer.php:311
 msgid "Header Hover Color"
 msgstr ""
 
-#: inc/customizer.php:334
+#: inc/customizer.php:335
 msgid "Header Lines Color"
 msgstr ""
 
-#: inc/customizer.php:363
+#: inc/customizer.php:364
 msgid "Sub Menu Colors"
 msgstr ""
 
-#: inc/customizer.php:373
+#: inc/customizer.php:374
 msgid "Sub Menu Background Color"
 msgstr ""
 
-#: inc/customizer.php:394
+#: inc/customizer.php:395
 msgid "Sub Menu Items Color"
 msgstr ""
 
-#: inc/customizer.php:418
+#: inc/customizer.php:419
 msgid "Sub Menu Description Color"
 msgstr ""
 
-#: inc/customizer.php:439
+#: inc/customizer.php:440
 msgid "Sub Menu Icons Color"
 msgstr ""
 
-#: inc/customizer.php:440
+#: inc/customizer.php:441
 msgid "If you add icons to menu items and use Icon Fonts."
 msgstr ""
 
-#: inc/customizer.php:460
+#: inc/customizer.php:461
 msgid "Sub Menu Hover Background Color"
 msgstr ""
 
-#: inc/customizer.php:484
+#: inc/customizer.php:485
 msgid "Sub Menu Hover Item Color"
 msgstr ""
 
-#: inc/customizer.php:505
+#: inc/customizer.php:506
 msgid "Sub Menu Hover Description Color"
 msgstr ""
 
-#: inc/customizer.php:523
+#: inc/customizer.php:524
 msgid "Blog Options"
 msgstr ""
 
-#: inc/customizer.php:531
+#: inc/customizer.php:532
 msgid "Site Options"
 msgstr ""
 
-#: inc/customizer.php:538
+#: inc/customizer.php:539
 msgid "Site Animations"
 msgstr ""
 
-#: inc/customizer.php:542, inc/customizer.php:554
+#: inc/customizer.php:543, inc/customizer.php:555
 msgid "On"
 msgstr ""
 
-#: inc/customizer.php:543, inc/customizer.php:555
+#: inc/customizer.php:544, inc/customizer.php:556
 msgid "Off"
 msgstr ""
 
-#: inc/customizer.php:550
+#: inc/customizer.php:551
 msgid "Meta Description in <head>"
 msgstr ""
 
-#: inc/customizer.php:563
+#: inc/customizer.php:564
 msgid "Home Options"
 msgstr ""
 
-#: inc/customizer.php:570
+#: inc/customizer.php:571
 msgid "Welcome Description"
 msgstr ""
 
-#: inc/customizer.php:588
+#: inc/customizer.php:589
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer.php:595
+#: inc/customizer.php:596
 msgid "Font Family"
 msgstr ""
 
-#: inc/customizer.php:611
+#: inc/customizer.php:612
 msgid "Headings Font Family"
 msgstr ""
 
-#: inc/customizer.php:627
+#: inc/customizer.php:628
 msgid "Google-Font subsets"
 msgstr ""
 
-#: inc/customizer.php:628
+#: inc/customizer.php:629
 msgid "The subsets used from Google's API."
 msgstr ""
 
-#: inc/customizer.php:638
+#: inc/customizer.php:639
 msgid "Font Size"
 msgstr ""
 
-#: inc/customizer.php:678
+#: inc/customizer.php:679
 msgid "Install Kirki Plugin"
 msgstr ""
 
-#: inc/customizer.php:684
+#. translators: %1$s: open anchor %2$s: closing anchor
+#: inc/customizer.php:686
 msgid "To access Site Options make sure you have installed the %1$s Kirki Toolkit %2$s plugin."
 msgstr ""
 
@@ -262,19 +268,11 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/extras.php:156
-msgid "Previous Post"
-msgstr ""
-
-#: inc/extras.php:165
-msgid "Next Post"
-msgstr ""
-
-#: inc/extras.php:308
+#: inc/extras.php:254
 msgid "Please define default parameters in the form of an array."
 msgstr ""
 
-#: inc/extras.php:313
+#: inc/extras.php:259
 msgid "Please define an SVG icon filename."
 msgstr ""
 
@@ -313,15 +311,15 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: template-parts/content-none.php:16
+#: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:22
+#: template-parts/content-none.php:20
 msgid "Ready to publish your first post? %1$s Get started here %2$s."
 msgstr ""
 
-#: template-parts/content-none.php:26
+#: template-parts/content-none.php:25
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
@@ -345,225 +343,225 @@ msgstr ""
 msgid "Cart (%s)"
 msgstr ""
 
-#: template-parts/pagination.php:12
+#: template-parts/pagination.php:5
 msgid "Previous page"
 msgstr ""
 
-#: template-parts/pagination.php:13
+#: template-parts/pagination.php:6
 msgid "Next page"
 msgstr ""
 
-#: inc/scripts/scripts.php:25
+#: inc/scripts/scripts.php:24
 msgid "Expand child menu"
 msgstr ""
 
-#: inc/scripts/scripts.php:26
+#: inc/scripts/scripts.php:25
 msgid "Collapse child menu"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:334
+#: inc/theme-functions/class-tgm-plugin-activation.php:327
 msgid "Install Required Plugins"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:335
+#: inc/theme-functions/class-tgm-plugin-activation.php:328
 msgid "Install Plugins"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:337
+#: inc/theme-functions/class-tgm-plugin-activation.php:330
 msgid "Installing Plugin: %s"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:339
+#: inc/theme-functions/class-tgm-plugin-activation.php:332
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:340
+#: inc/theme-functions/class-tgm-plugin-activation.php:333
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:341
+#: inc/theme-functions/class-tgm-plugin-activation.php:334
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:347
+#: inc/theme-functions/class-tgm-plugin-activation.php:340
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:353
+#: inc/theme-functions/class-tgm-plugin-activation.php:346
 msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
 msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:359
+#: inc/theme-functions/class-tgm-plugin-activation.php:352
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:365
+#: inc/theme-functions/class-tgm-plugin-activation.php:358
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:371
+#: inc/theme-functions/class-tgm-plugin-activation.php:364
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:377
+#: inc/theme-functions/class-tgm-plugin-activation.php:370
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:382
+#: inc/theme-functions/class-tgm-plugin-activation.php:375
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:387
+#: inc/theme-functions/class-tgm-plugin-activation.php:380
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:392
+#: inc/theme-functions/class-tgm-plugin-activation.php:385
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:393, inc/theme-functions/class-tgm-plugin-activation.php:912, inc/theme-functions/class-tgm-plugin-activation.php:2618, inc/theme-functions/class-tgm-plugin-activation.php:3665
+#: inc/theme-functions/class-tgm-plugin-activation.php:386, inc/theme-functions/class-tgm-plugin-activation.php:827, inc/theme-functions/class-tgm-plugin-activation.php:2533, inc/theme-functions/class-tgm-plugin-activation.php:3580
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:394, inc/theme-functions/class-tgm-plugin-activation.php:3244
+#: inc/theme-functions/class-tgm-plugin-activation.php:387, inc/theme-functions/class-tgm-plugin-activation.php:3159
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:395, inc/theme-functions/class-tgm-plugin-activation.php:3037
+#: inc/theme-functions/class-tgm-plugin-activation.php:388, inc/theme-functions/class-tgm-plugin-activation.php:2952
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:397
+#: inc/theme-functions/class-tgm-plugin-activation.php:390
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:399
+#: inc/theme-functions/class-tgm-plugin-activation.php:392
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
 msgstr ""
 
 #. translators: 1: dashboard link.
-#: inc/theme-functions/class-tgm-plugin-activation.php:401
+#: inc/theme-functions/class-tgm-plugin-activation.php:394
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:402
+#: inc/theme-functions/class-tgm-plugin-activation.php:395
 msgid "Dismiss this notice"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:403
+#: inc/theme-functions/class-tgm-plugin-activation.php:396
 msgid "There are one or more required or recommended plugins to install, update or activate."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:404
+#: inc/theme-functions/class-tgm-plugin-activation.php:397
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:607
+#: inc/theme-functions/class-tgm-plugin-activation.php:522
 msgid "This plugin needs to be updated to be compatible with your theme."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:608
+#: inc/theme-functions/class-tgm-plugin-activation.php:523
 msgid "Update Required"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:1019
+#: inc/theme-functions/class-tgm-plugin-activation.php:934
 msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:1019, inc/theme-functions/class-tgm-plugin-activation.php:1022
+#: inc/theme-functions/class-tgm-plugin-activation.php:934, inc/theme-functions/class-tgm-plugin-activation.php:937
 msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:1022
+#: inc/theme-functions/class-tgm-plugin-activation.php:937
 msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:1206, inc/theme-functions/class-tgm-plugin-activation.php:3033
+#: inc/theme-functions/class-tgm-plugin-activation.php:1121, inc/theme-functions/class-tgm-plugin-activation.php:2948
 msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
 #. translators: %s: version number
-#: inc/theme-functions/class-tgm-plugin-activation.php:2067
+#: inc/theme-functions/class-tgm-plugin-activation.php:1982
 msgid "TGMPA v%s"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2358
+#: inc/theme-functions/class-tgm-plugin-activation.php:2273
 msgid "Required"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2361
+#: inc/theme-functions/class-tgm-plugin-activation.php:2276
 msgid "Recommended"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2377
+#: inc/theme-functions/class-tgm-plugin-activation.php:2292
 msgid "WordPress Repository"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2380
+#: inc/theme-functions/class-tgm-plugin-activation.php:2295
 msgid "External Source"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2383
+#: inc/theme-functions/class-tgm-plugin-activation.php:2298
 msgid "Pre-Packaged"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2400
+#: inc/theme-functions/class-tgm-plugin-activation.php:2315
 msgid "Not Installed"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2404
+#: inc/theme-functions/class-tgm-plugin-activation.php:2319
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2406
+#: inc/theme-functions/class-tgm-plugin-activation.php:2321
 msgid "Active"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2412
+#: inc/theme-functions/class-tgm-plugin-activation.php:2327
 msgid "Required Update not Available"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2415
+#: inc/theme-functions/class-tgm-plugin-activation.php:2330
 msgid "Requires Update"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2418
+#: inc/theme-functions/class-tgm-plugin-activation.php:2333
 msgid "Update recommended"
 msgstr ""
 
 #. translators: 1: install status, 2: update status
-#: inc/theme-functions/class-tgm-plugin-activation.php:2427
+#: inc/theme-functions/class-tgm-plugin-activation.php:2342
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
 #. translators: 1: number of plugins.
-#: inc/theme-functions/class-tgm-plugin-activation.php:2473
+#: inc/theme-functions/class-tgm-plugin-activation.php:2388
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
@@ -571,191 +569,183 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: inc/theme-functions/class-tgm-plugin-activation.php:2477
+#: inc/theme-functions/class-tgm-plugin-activation.php:2392
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: inc/theme-functions/class-tgm-plugin-activation.php:2481
+#: inc/theme-functions/class-tgm-plugin-activation.php:2396
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: inc/theme-functions/class-tgm-plugin-activation.php:2485
+#: inc/theme-functions/class-tgm-plugin-activation.php:2400
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2567
+#: inc/theme-functions/class-tgm-plugin-activation.php:2482
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2575
+#: inc/theme-functions/class-tgm-plugin-activation.php:2490
 msgid "Installed version:"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2583
+#: inc/theme-functions/class-tgm-plugin-activation.php:2498
 msgid "Minimum required version:"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2595
+#: inc/theme-functions/class-tgm-plugin-activation.php:2510
 msgid "Available version:"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2618
+#: inc/theme-functions/class-tgm-plugin-activation.php:2533
 msgid "No plugins to install, update or activate."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2632
+#: inc/theme-functions/class-tgm-plugin-activation.php:2547
 msgid "Plugin"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2633
+#: inc/theme-functions/class-tgm-plugin-activation.php:2548
 msgid "Source"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2634
+#: inc/theme-functions/class-tgm-plugin-activation.php:2549
 msgid "Type"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2638
+#: inc/theme-functions/class-tgm-plugin-activation.php:2553
 msgid "Version"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2639
+#: inc/theme-functions/class-tgm-plugin-activation.php:2554
 msgid "Status"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: inc/theme-functions/class-tgm-plugin-activation.php:2688
+#: inc/theme-functions/class-tgm-plugin-activation.php:2603
 msgid "Install %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: inc/theme-functions/class-tgm-plugin-activation.php:2693
+#: inc/theme-functions/class-tgm-plugin-activation.php:2608
 msgid "Update %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: inc/theme-functions/class-tgm-plugin-activation.php:2699
+#: inc/theme-functions/class-tgm-plugin-activation.php:2614
 msgid "Activate %2$s"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2769
+#: inc/theme-functions/class-tgm-plugin-activation.php:2684
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2802
+#: inc/theme-functions/class-tgm-plugin-activation.php:2717
 msgid "Install"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2808
+#: inc/theme-functions/class-tgm-plugin-activation.php:2723
 msgid "Update"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2811
+#: inc/theme-functions/class-tgm-plugin-activation.php:2726
 msgid "Activate"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2842
+#: inc/theme-functions/class-tgm-plugin-activation.php:2757
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2844
+#: inc/theme-functions/class-tgm-plugin-activation.php:2759
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2885
+#: inc/theme-functions/class-tgm-plugin-activation.php:2800
 msgid "No plugins are available to be installed at this time."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2887
+#: inc/theme-functions/class-tgm-plugin-activation.php:2802
 msgid "No plugins are available to be updated at this time."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2993
+#: inc/theme-functions/class-tgm-plugin-activation.php:2908
 msgid "No plugins were selected to be activated. No action taken."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3019
+#: inc/theme-functions/class-tgm-plugin-activation.php:2934
 msgid "No plugins are available to be activated at this time."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3243
+#: inc/theme-functions/class-tgm-plugin-activation.php:3158
 msgid "Plugin activation failed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3583
+#: inc/theme-functions/class-tgm-plugin-activation.php:3498
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #. translators: 1: plugin name, 2: error message.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3586
+#: inc/theme-functions/class-tgm-plugin-activation.php:3501
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3588
+#: inc/theme-functions/class-tgm-plugin-activation.php:3503
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3592
+#: inc/theme-functions/class-tgm-plugin-activation.php:3507
 msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3594
+#: inc/theme-functions/class-tgm-plugin-activation.php:3509
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3594, inc/theme-functions/class-tgm-plugin-activation.php:3602
+#: inc/theme-functions/class-tgm-plugin-activation.php:3509, inc/theme-functions/class-tgm-plugin-activation.php:3517
 msgid "Show Details"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3594, inc/theme-functions/class-tgm-plugin-activation.php:3602
+#: inc/theme-functions/class-tgm-plugin-activation.php:3509, inc/theme-functions/class-tgm-plugin-activation.php:3517
 msgid "Hide Details"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3595
+#: inc/theme-functions/class-tgm-plugin-activation.php:3510
 msgid "All installations and activations have been completed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3597
+#: inc/theme-functions/class-tgm-plugin-activation.php:3512
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3600
+#: inc/theme-functions/class-tgm-plugin-activation.php:3515
 msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3602
+#: inc/theme-functions/class-tgm-plugin-activation.php:3517
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:3603
+#: inc/theme-functions/class-tgm-plugin-activation.php:3518
 msgid "All installations have been completed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3605
+#: inc/theme-functions/class-tgm-plugin-activation.php:3520
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/theme-functions/demo-import-data.php:8
-msgid "Demo 1 - Default"
-msgstr ""
-
-#: inc/theme-functions/demo-import-data.php:14
-msgid "Click on \"Import Demo Data\" to start importing. Images were replaced by a placeholder to avoid long waits."
 msgstr ""
 
 #: inc/theme-functions/retina-logo.php:103
@@ -772,6 +762,10 @@ msgstr ""
 
 #: inc/theme-functions/theme-info-page.php:24
 msgid "Getting Started"
+msgstr ""
+
+#: inc/theme-functions/theme-info-page.php:26
+msgid "v"
 msgstr ""
 
 #: inc/theme-functions/theme-info-page.php:27

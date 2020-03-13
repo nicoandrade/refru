@@ -69,62 +69,45 @@ const params = require("yargs").argv;
 const changeCase = require("change-case");
 const del = require("del");
 
-
 /**
  * Function: `compileCSS`.
  *
  * Compiles Sass, Autoprefixes it and Minifies CSS in a function to reuse it
  *
  */
-function compileCSS(fileSource, folderDestination, consoleMessage){
-	return gulp
-		.src(fileSource, {
-			allowEmpty: true
-		})
-		.pipe(plumber(errorHandler))
-		.pipe(
-			sourcemaps.init({
-				largeFile: true
-			})
-		)
-		.pipe(
-			sass({
-				errLogToConsole: config.errLogToConsole,
-				outputStyle: config.outputStyle,
-				precision: config.precision
-			})
-		)
-		.on("error", sass.logError)
-		.pipe(
-			sourcemaps.write({
-				includeContent: false
-			})
-		)
-		.pipe(
-			sourcemaps.init({
-				loadMaps: true
-			})
-		)
-		.pipe(autoprefixer(config.BROWSERS_LIST))
-		.pipe(sourcemaps.write("./"))
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(folderDestination))
-		.pipe(filter("**/*.css")) // Filtering stream to only css files.
-		.pipe(
-			minifycss({
-				maxLineLen: 0
-			})
-		)
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(folderDestination))
-		.pipe(filter("**/*.css")) // Filtering stream to only css files.
-		.pipe(browserSync.stream()) // Reloads style.min.css if that is enqueued.
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> " + consoleMessage + " — completed!\n",
-				onLast: true
-			})
-		);
+function compileCSS(fileSource, folderDestination, consoleMessage) {
+    return gulp
+        .src(fileSource, {
+            allowEmpty: true
+        })
+        .pipe(plumber(errorHandler))
+        .pipe(
+            sourcemaps.init({
+                largeFile: true
+            })
+        )
+        .pipe(
+            sass({
+                errLogToConsole: config.errLogToConsole,
+                outputStyle: config.outputStyle,
+                precision: config.precision
+            })
+        )
+        .on("error", sass.logError)
+        .pipe(autoprefixer(config.BROWSERS_LIST))
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(folderDestination))
+        .pipe(filter("**/*.css")) // Filtering stream to only css files.
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(folderDestination))
+        .pipe(filter("**/*.css")) // Filtering stream to only css files.
+        .pipe(browserSync.stream()) // Reloads style.min.css if that is enqueued.
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> " + consoleMessage + " — completed!\n",
+                onLast: true
+            })
+        );
 }
 
 /**
@@ -133,10 +116,10 @@ function compileCSS(fileSource, folderDestination, consoleMessage){
  * @param Mixed err
  */
 const errorHandler = r => {
-	notify.onError("\n\n❌  ===> ERROR: <%= error.message %>\n")(r);
-	beep();
+    notify.onError("\n\n❌  ===> ERROR: <%= error.message %>\n")(r);
+    beep();
 
-	// this.emit('end');
+    // this.emit('end');
 };
 
 /**
@@ -148,19 +131,19 @@ const errorHandler = r => {
  * @param {Mixed} done Done.
  */
 const browsersync = done => {
-	browserSync.init({
-		proxy: config.projectURL,
-		open: config.browserAutoOpen,
-		injectChanges: config.injectChanges,
-		watchEvents: ["change", "add", "unlink", "addDir", "unlinkDir"]
-	});
-	done();
+    browserSync.init({
+        proxy: config.projectURL,
+        open: config.browserAutoOpen,
+        injectChanges: config.injectChanges,
+        watchEvents: ["change", "add", "unlink", "addDir", "unlinkDir"]
+    });
+    done();
 };
 
 // Helper function to allow browser reload with Gulp 4.
 const reload = done => {
-	browserSync.reload();
-	done();
+    browserSync.reload();
+    done();
 };
 
 /**
@@ -178,46 +161,46 @@ const reload = done => {
  *    7. Injects CSS or reloads the browser via browserSync
  */
 gulp.task("styles", () => {
-	return gulp
-		.src(config.styleSRC, {
-			allowEmpty: true
-		})
-		.pipe(plumber(errorHandler))
-		.pipe(
-			sourcemaps.init({
-				largeFile: true
-			})
-		)
-		.pipe(
-			sass({
-				errLogToConsole: config.errLogToConsole,
-				outputStyle: config.outputStyle,
-				precision: config.precision
-			})
-		)
-		.on("error", sass.logError)
-		.pipe(
-			sourcemaps.write({
-				includeContent: false
-			})
-		)
-		.pipe(
-			sourcemaps.init({
-				loadMaps: true
-			})
-		)
-		.pipe(autoprefixer(config.BROWSERS_LIST))
-		.pipe(sourcemaps.write("./"))
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(config.styleDestination))
-		.pipe(filter("**/*.css")) // Filtering stream to only css files.
-		.pipe(browserSync.stream()) // Reloads style.min.css if that is enqueued.
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> STYLES — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(config.styleSRC, {
+            allowEmpty: true
+        })
+        .pipe(plumber(errorHandler))
+        .pipe(
+            sourcemaps.init({
+                largeFile: true
+            })
+        )
+        .pipe(
+            sass({
+                errLogToConsole: config.errLogToConsole,
+                outputStyle: config.outputStyle,
+                precision: config.precision
+            })
+        )
+        .on("error", sass.logError)
+        .pipe(
+            sourcemaps.write({
+                includeContent: false
+            })
+        )
+        .pipe(
+            sourcemaps.init({
+                loadMaps: true
+            })
+        )
+        .pipe(autoprefixer(config.BROWSERS_LIST))
+        .pipe(sourcemaps.write("./"))
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(config.styleDestination))
+        .pipe(filter("**/*.css")) // Filtering stream to only css files.
+        .pipe(browserSync.stream()) // Reloads style.min.css if that is enqueued.
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> STYLES — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -227,12 +210,12 @@ gulp.task("styles", () => {
  *
  */
 gulp.task("adminStyles", () => {
-
-	return compileCSS(config.adminStyleSRC, config.adminStyleDestination, "ADMIN STYLES" );
-
+    return compileCSS(
+        config.adminStyleSRC,
+        config.adminStyleDestination,
+        "ADMIN STYLES"
+    );
 });
-
-
 
 /**
  * Task: `editorStyles`.
@@ -241,11 +224,12 @@ gulp.task("adminStyles", () => {
  *
  */
 gulp.task("editorStyles", () => {
-
-	return compileCSS(config.editorStylesSRC, config.editorStylesDestination, "EDITOR STYLES" );
-	
+    return compileCSS(
+        config.editorStylesSRC,
+        config.editorStylesDestination,
+        "EDITOR STYLES"
+    );
 });
-
 
 /**
  * Task: `stylesBuild`.
@@ -254,9 +238,7 @@ gulp.task("editorStyles", () => {
  *
  */
 gulp.task("stylesBuild", () => {
-
-	return compileCSS(config.styleSRC, config.styleDestination, "STYLES BUILD" );
-
+    return compileCSS(config.styleSRC, config.styleDestination, "STYLES BUILD");
 });
 
 /**
@@ -275,62 +257,62 @@ gulp.task("stylesBuild", () => {
  *    9. Injects CSS or reloads the browser via browserSync
  */
 gulp.task("stylesRTL", () => {
-	return gulp
-		.src(config.styleSRC, {
-			allowEmpty: true
-		})
-		.pipe(plumber(errorHandler))
-		.pipe(sourcemaps.init())
-		.pipe(
-			sass({
-				errLogToConsole: config.errLogToConsole,
-				outputStyle: config.outputStyle,
-				precision: config.precision
-			})
-		)
-		.on("error", sass.logError)
-		.pipe(
-			sourcemaps.write({
-				includeContent: false
-			})
-		)
-		.pipe(
-			sourcemaps.init({
-				loadMaps: true
-			})
-		)
-		.pipe(autoprefixer(config.BROWSERS_LIST))
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(
-			rename({
-				suffix: "-rtl"
-			})
-		) // Append "-rtl" to the filename.
-		.pipe(rtlcss()) // Convert to RTL.
-		.pipe(sourcemaps.write("./")) // Output sourcemap for style-rtl.css.
-		.pipe(gulp.dest(config.styleDestination))
-		.pipe(filter("**/*.css")) // Filtering stream to only css files.
-		.pipe(browserSync.stream()) // Reloads style.css or style-rtl.css, if that is enqueued.
-		.pipe(
-			rename({
-				suffix: ".min"
-			})
-		)
-		.pipe(
-			minifycss({
-				maxLineLen: 10
-			})
-		)
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(config.styleDestination))
-		.pipe(filter("**/*.css")) // Filtering stream to only css files.
-		.pipe(browserSync.stream()) // Reloads style.css or style-rtl.css, if that is enqueued.
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> STYLES RTL — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(config.styleSRC, {
+            allowEmpty: true
+        })
+        .pipe(plumber(errorHandler))
+        .pipe(sourcemaps.init())
+        .pipe(
+            sass({
+                errLogToConsole: config.errLogToConsole,
+                outputStyle: config.outputStyle,
+                precision: config.precision
+            })
+        )
+        .on("error", sass.logError)
+        .pipe(
+            sourcemaps.write({
+                includeContent: false
+            })
+        )
+        .pipe(
+            sourcemaps.init({
+                loadMaps: true
+            })
+        )
+        .pipe(autoprefixer(config.BROWSERS_LIST))
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(
+            rename({
+                suffix: "-rtl"
+            })
+        ) // Append "-rtl" to the filename.
+        .pipe(rtlcss()) // Convert to RTL.
+        .pipe(sourcemaps.write("./")) // Output sourcemap for style-rtl.css.
+        .pipe(gulp.dest(config.styleDestination))
+        .pipe(filter("**/*.css")) // Filtering stream to only css files.
+        .pipe(browserSync.stream()) // Reloads style.css or style-rtl.css, if that is enqueued.
+        .pipe(
+            rename({
+                suffix: ".min"
+            })
+        )
+        .pipe(
+            minifycss({
+                maxLineLen: 10
+            })
+        )
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(config.styleDestination))
+        .pipe(filter("**/*.css")) // Filtering stream to only css files.
+        .pipe(browserSync.stream()) // Reloads style.css or style-rtl.css, if that is enqueued.
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> STYLES RTL — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -345,30 +327,30 @@ gulp.task("stylesRTL", () => {
  *     4. Uglifes/Minifies the JS file and generates vendors.min.js
  */
 gulp.task("vendorsJS", () => {
-	return gulp
-		.src(config.jsVendorSRC, {
-			since: gulp.lastRun("vendorsJS")
-		}) // Only run on changed files.
-		.pipe(plumber(errorHandler))
-		.pipe(remember(config.jsVendorSRC)) // Bring all files back to stream.
-		.pipe(concat(config.jsVendorFile + ".js"))
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(config.jsVendorDestination))
-		.pipe(
-			rename({
-				basename: config.jsVendorFile,
-				suffix: ".min"
-			})
-		)
-		.pipe(uglify())
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(config.jsVendorDestination))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> VENDOR JS — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(config.jsVendorSRC, {
+            since: gulp.lastRun("vendorsJS")
+        }) // Only run on changed files.
+        .pipe(plumber(errorHandler))
+        .pipe(remember(config.jsVendorSRC)) // Bring all files back to stream.
+        .pipe(concat(config.jsVendorFile + ".js"))
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(config.jsVendorDestination))
+        .pipe(
+            rename({
+                basename: config.jsVendorFile,
+                suffix: ".min"
+            })
+        )
+        .pipe(uglify())
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(config.jsVendorDestination))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> VENDOR JS — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -383,44 +365,44 @@ gulp.task("vendorsJS", () => {
  *     4. Uglifes/Minifies the JS file and generates custom.min.js
  */
 gulp.task("customJS", () => {
-	return gulp
-		.src(config.jsCustomSRC, {
-			since: gulp.lastRun("customJS")
-		}) // Only run on changed files.
-		.pipe(plumber(errorHandler))
-		.pipe(
-			babel({
-				presets: [
-					[
-						"@babel/preset-env", // Preset to compile your modern JS to ES5.
-						{
-							targets: {
-								browsers: config.BROWSERS_LIST
-							} // Target browser list to support.
-						}
-					]
-				]
-			})
-		)
-		.pipe(remember(config.jsCustomSRC)) // Bring all files back to stream.
-		.pipe(concat(config.jsCustomFile + ".js"))
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(config.jsCustomDestination))
-		.pipe(
-			rename({
-				basename: config.jsCustomFile,
-				suffix: ".min"
-			})
-		)
-		.pipe(uglify())
-		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-		.pipe(gulp.dest(config.jsCustomDestination))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> CUSTOM JS — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(config.jsCustomSRC, {
+            since: gulp.lastRun("customJS")
+        }) // Only run on changed files.
+        .pipe(plumber(errorHandler))
+        .pipe(
+            babel({
+                presets: [
+                    [
+                        "@babel/preset-env", // Preset to compile your modern JS to ES5.
+                        {
+                            targets: {
+                                browsers: config.BROWSERS_LIST
+                            } // Target browser list to support.
+                        }
+                    ]
+                ]
+            })
+        )
+        .pipe(remember(config.jsCustomSRC)) // Bring all files back to stream.
+        .pipe(concat(config.jsCustomFile + ".js"))
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(config.jsCustomDestination))
+        .pipe(
+            rename({
+                basename: config.jsCustomFile,
+                suffix: ".min"
+            })
+        )
+        .pipe(uglify())
+        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+        .pipe(gulp.dest(config.jsCustomDestination))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> CUSTOM JS — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -440,40 +422,40 @@ gulp.task("customJS", () => {
  * @link https://github.com/sindresorhus/gulp-imagemin
  */
 gulp.task("images", () => {
-	return gulp
-		.src(config.imgSRC)
-		.pipe(
-			cache(
-				imagemin([
-					imagemin.gifsicle({
-						interlaced: true
-					}),
-					imagemin.jpegtran({
-						progressive: true
-					}),
-					imagemin.optipng({
-						optimizationLevel: 3
-					}), // 0-7 low-high.
-					imagemin.svgo({
-						plugins: [
-							{
-								removeViewBox: true
-							},
-							{
-								cleanupIDs: false
-							}
-						]
-					})
-				])
-			)
-		)
-		.pipe(gulp.dest(config.imgDST))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> IMAGES — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(config.imgSRC)
+        .pipe(
+            cache(
+                imagemin([
+                    imagemin.gifsicle({
+                        interlaced: true
+                    }),
+                    imagemin.jpegtran({
+                        progressive: true
+                    }),
+                    imagemin.optipng({
+                        optimizationLevel: 3
+                    }), // 0-7 low-high.
+                    imagemin.svgo({
+                        plugins: [
+                            {
+                                removeViewBox: true
+                            },
+                            {
+                                cleanupIDs: false
+                            }
+                        ]
+                    })
+                ])
+            )
+        )
+        .pipe(gulp.dest(config.imgDST))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> IMAGES — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -483,7 +465,7 @@ gulp.task("images", () => {
  * each image will be regenerated.
  */
 gulp.task("clearCache", function(done) {
-	return cache.clearAll(done);
+    return cache.clearAll(done);
 });
 
 /**
@@ -496,29 +478,29 @@ gulp.task("clearCache", function(done) {
  * 4. Generate a .pot file of i18n that can be used for l10n to build .mo file
  */
 gulp.task("translate", () => {
-	return gulp
-		.src(config.watchPhp)
-		.pipe(sort())
-		.pipe(
-			wpPot({
-				domain: config.textDomain,
-				package: config.packageName,
-				bugReport: config.bugReport,
-				lastTranslator: config.lastTranslator,
-				team: config.team
-			})
-		)
-		.pipe(
-			gulp.dest(
-				config.translationDestination + "/" + config.translationFile
-			)
-		)
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> TRANSLATE — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(config.watchPhp)
+        .pipe(sort())
+        .pipe(
+            wpPot({
+                domain: config.textDomain,
+                package: config.packageName,
+                bugReport: config.bugReport,
+                lastTranslator: config.lastTranslator,
+                team: config.team
+            })
+        )
+        .pipe(
+            gulp.dest(
+                config.translationDestination + "/" + config.translationFile
+            )
+        )
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> TRANSLATE — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -528,32 +510,32 @@ gulp.task("translate", () => {
  *
  */
 gulp.task("readmeMarkdown", () => {
-	return gulp
-		.src(["./readme.txt"])
-		.pipe(replace(/===(.*)===/g, "#$1")) // Replace titles with MD #
-		.pipe(replace(/==(.*)==/g, "##$1"))
-		.pipe(replace(/=(.*)=/g, "####$1"))
-		.pipe(replace("Contributors:", "**Contributors:**"))
-		.pipe(replace("Author:", "**Author:**"))
-		.pipe(replace("Requires at least:", "**Requires at least:**"))
-		.pipe(replace("Tested up to:", "**Tested up to:**"))
-		.pipe(replace("Stable tag:", "**Stable tag:**"))
-		.pipe(replace("License:", "**License:**"))
-		.pipe(replace("License URI:", "**License URI:**"))
-		.pipe(replace("Source:", "**Source:**"))
-		.pipe(replace("Tags:", "**Tags:**"))
-		.pipe(
-			rename({
-				extname: ".md"
-			})
-		)
-		.pipe(gulp.dest("./"))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> README MARKDOWN — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src(["./readme.txt"])
+        .pipe(replace(/===(.*)===/g, "#$1")) // Replace titles with MD #
+        .pipe(replace(/==(.*)==/g, "##$1"))
+        .pipe(replace(/=(.*)=/g, "####$1"))
+        .pipe(replace("Contributors:", "**Contributors:**"))
+        .pipe(replace("Author:", "**Author:**"))
+        .pipe(replace("Requires at least:", "**Requires at least:**"))
+        .pipe(replace("Tested up to:", "**Tested up to:**"))
+        .pipe(replace("Stable tag:", "**Stable tag:**"))
+        .pipe(replace("License:", "**License:**"))
+        .pipe(replace("License URI:", "**License URI:**"))
+        .pipe(replace("Source:", "**Source:**"))
+        .pipe(replace("Tags:", "**Tags:**"))
+        .pipe(
+            rename({
+                extname: ".md"
+            })
+        )
+        .pipe(gulp.dest("./"))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> README MARKDOWN — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -562,28 +544,28 @@ gulp.task("readmeMarkdown", () => {
  * Watches for file changes and runs specific tasks.
  */
 gulp.task(
-	"default",
-	gulp.parallel(
-		"styles",
-		"adminStyles",
-		"editorStyles",
-		"vendorsJS",
-		"customJS",
-		"images",
-		"readmeMarkdown",
-		browsersync,
-		() => {
-			gulp.watch(config.watchPhp, reload); // Reload on PHP file changes.
-			gulp.watch(
-				config.watchStyles,
-				gulp.parallel("styles", "adminStyles", "editorStyles")
-			); // Reload on SCSS file changes.
-			gulp.watch(config.watchJsVendor, gulp.series("vendorsJS", reload)); // Reload on vendorsJS file changes.
-			gulp.watch(config.watchJsCustom, gulp.series("customJS", reload)); // Reload on customJS file changes.
-			gulp.watch(config.imgSRC, gulp.series("images", reload)); // Reload on customJS file changes.
-			gulp.watch("./readme.txt", gulp.series("readmeMarkdown")); // Creates Markdown file from readme.txt
-		}
-	)
+    "default",
+    gulp.parallel(
+        "styles",
+        "adminStyles",
+        "editorStyles",
+        "vendorsJS",
+        "customJS",
+        "images",
+        "readmeMarkdown",
+        browsersync,
+        () => {
+            gulp.watch(config.watchPhp, reload); // Reload on PHP file changes.
+            gulp.watch(
+                config.watchStyles,
+                gulp.parallel("styles", "adminStyles", "editorStyles")
+            ); // Reload on SCSS file changes.
+            gulp.watch(config.watchJsVendor, gulp.series("vendorsJS", reload)); // Reload on vendorsJS file changes.
+            gulp.watch(config.watchJsCustom, gulp.series("customJS", reload)); // Reload on customJS file changes.
+            gulp.watch(config.imgSRC, gulp.series("images", reload)); // Reload on customJS file changes.
+            gulp.watch("./readme.txt", gulp.series("readmeMarkdown")); // Creates Markdown file from readme.txt
+        }
+    )
 );
 
 /**
@@ -596,36 +578,36 @@ gulp.task(
  *
  */
 gulp.task("moveFiles", () => {
-	return gulp
-		.src([
-			"./**/*",
-			"!./{images/raw,images/raw/**/*}",
-			"!./{node_modules,node_modules/**/*}",
-			"!./assets/{sass,sass/*}",
-			"!./assets/css/vendor/{bootstrap,bootstrap/**/*}",
-			"!./assets/css/vendor/fontawesome-free/{scss,scss/**/*}",
-			"!./assets/css/vendor/quemalabs-font/style.scss",
-			"!./assets/css/vendor/quemalabs-font/style.css",
-			"!./gulpfile.js",
-			"!./package.json",
-			"!./package-lock.json",
-			"!**.DS_Store*",
-			"!Thumbs.db",
-			"!./gulpfile.babel.js",
-			"!./wpgulp.config.js",
-			"!./*.codekit3",
-			"!./.gitignore",
-			"!./style.scss",
-			"!./style.less",
-			"!./dist/"
-		])
-		.pipe(gulp.dest("./dist/" + config.textDomain + "/"))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> FILES MOVED — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src([
+            "./**/*",
+            "!./{images/raw,images/raw/**/*}",
+            "!./{node_modules,node_modules/**/*}",
+            "!./assets/{sass,sass/*}",
+            "!./assets/css/vendor/{bootstrap,bootstrap/**/*}",
+            "!./assets/css/vendor/fontawesome-free/{scss,scss/**/*}",
+            "!./assets/css/vendor/quemalabs-font/style.scss",
+            "!./assets/css/vendor/quemalabs-font/style.css",
+            "!./gulpfile.js",
+            "!./package.json",
+            "!./package-lock.json",
+            "!**.DS_Store*",
+            "!Thumbs.db",
+            "!./gulpfile.babel.js",
+            "!./wpgulp.config.js",
+            "!./*.codekit3",
+            "!./.gitignore",
+            "!./style.scss",
+            "!./style.less",
+            "!./dist/"
+        ])
+        .pipe(gulp.dest("./dist/" + config.textDomain + "/"))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> FILES MOVED — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -638,37 +620,37 @@ gulp.task("moveFiles", () => {
  *
  */
 gulp.task("zip", () => {
-	return gulp
-		.src([
-			"./dist/**/*",
-			"!./{images/raw,images/raw/**/*}",
-			"!./{node_modules,node_modules/**/*}",
-			"!./assets/{sass,sass/*}",
-			"!./assets/css/vendor/{bootstrap,bootstrap/**/*}",
-			"!./assets/css/vendor/fontawesome-free/{scss,scss/**/*}",
-			"!./assets/css/vendor/quemalabs-font/style.scss",
-			"!./assets/css/vendor/quemalabs-font/style.css",
-			"!./gulpfile.js",
-			"!./package.json",
-			"!./package-lock.json",
-			"!**.DS_Store*",
-			"!Thumbs.db",
-			"!./gulpfile.babel.js",
-			"!./wpgulp.config.js",
-			"!./*.codekit3",
-			"!./.gitignore",
-			"!./style.scss",
-			"!./style.less",
-			"!./dist/"
-		])
-		.pipe(zip(config.textDomain + ".zip"))
-		.pipe(gulp.dest("./../"))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> ZIP — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src([
+            "./dist/**/*",
+            "!./{images/raw,images/raw/**/*}",
+            "!./{node_modules,node_modules/**/*}",
+            "!./assets/{sass,sass/*}",
+            "!./assets/css/vendor/{bootstrap,bootstrap/**/*}",
+            "!./assets/css/vendor/fontawesome-free/{scss,scss/**/*}",
+            "!./assets/css/vendor/quemalabs-font/style.scss",
+            "!./assets/css/vendor/quemalabs-font/style.css",
+            "!./gulpfile.js",
+            "!./package.json",
+            "!./package-lock.json",
+            "!**.DS_Store*",
+            "!Thumbs.db",
+            "!./gulpfile.babel.js",
+            "!./wpgulp.config.js",
+            "!./*.codekit3",
+            "!./.gitignore",
+            "!./style.scss",
+            "!./style.less",
+            "!./dist/"
+        ])
+        .pipe(zip(config.textDomain + ".zip"))
+        .pipe(gulp.dest("./../"))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> ZIP — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -678,23 +660,23 @@ gulp.task("zip", () => {
  *
  */
 gulp.task("child", () => {
-	return gulp
-		.src([
-			"./inc/child-theme/functions.php",
-			"./inc/child-theme/style.css",
-			"./screenshot.png",
-			"!**.DS_Store*",
-			"!Thumbs.db",
-			"!./*.codekit3"
-		])
-		.pipe(zip(config.textDomain + "-child.zip"))
-		.pipe(gulp.dest("./../"))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> CHILD THEME — created!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src([
+            "./inc/child-theme/functions.php",
+            "./inc/child-theme/style.css",
+            "./screenshot.png",
+            "!**.DS_Store*",
+            "!Thumbs.db",
+            "!./*.codekit3"
+        ])
+        .pipe(zip(config.textDomain + "-child.zip"))
+        .pipe(gulp.dest("./../"))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> CHILD THEME — created!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -708,83 +690,83 @@ gulp.task("child", () => {
  *
  */
 gulp.task("starter", () => {
-	return gulp
-		.src([
-			"./**/*",
-			"!./{node_modules,node_modules/**/*}",
-			"!**.DS_Store*",
-			"!Thumbs.db",
-			"!./*.codekit3"
-		])
-		.pipe(
-			replace(
-				changeCase.lowerCase(changeCase.snakeCase(config.textDomain)) +
-					"_",
-				changeCase.lowerCase(changeCase.snakeCase(params.name)) + "_"
-			)
-		)
-		.pipe(
-			replace(
-				changeCase.upperCase(changeCase.snakeCase(config.textDomain)) +
-					"_",
-				changeCase.upperCase(changeCase.snakeCase(params.name)) + "_"
-			)
-		)
-		.pipe(
-			replace(
-				changeCase.lowerCase(changeCase.paramCase(config.textDomain)) +
-					"-",
-				changeCase.lowerCase(changeCase.paramCase(params.name)) + "-"
-			)
-		)
-		.pipe(
-			replace(
-				changeCase.lowerCase(changeCase.snakeCase(config.textDomain)) +
-					".",
-				changeCase.lowerCase(changeCase.snakeCase(params.name)) + "."
-			)
-		)
-		.pipe(
-			replace(
-				changeCase.lowerCase(changeCase.snakeCase(config.textDomain)) +
-					" ",
-				changeCase.lowerCase(changeCase.snakeCase(params.name)) + " "
-			)
-		)
-		.pipe(
-			replace(
-				"'" + config.textDomain + "'",
-				"'" + changeCase.paramCase(params.name) + "'"
-			)
-		)
-		.pipe(
-			replace(
-				'"' + config.textDomain + '"',
-				'"' + changeCase.paramCase(params.name) + '"'
-			)
-		)
-		.pipe(
-			replace(
-				"/" + config.textDomain + "/",
-				"/" + changeCase.paramCase(params.name) + "/"
-			)
-		)
-		.pipe(
-			replace(
-				changeCase.titleCase(
-					changeCase.sentenceCase(config.textDomain)
-				),
-				changeCase.titleCase(changeCase.sentenceCase(params.name))
-			)
-		)
-		.pipe(zip(changeCase.paramCase(params.name) + ".zip"))
-		.pipe(gulp.dest("./../"))
-		.pipe(
-			notify({
-				message: "\n\n✅  ===> STARTER ZIP — completed!\n",
-				onLast: true
-			})
-		);
+    return gulp
+        .src([
+            "./**/*",
+            "!./{node_modules,node_modules/**/*}",
+            "!**.DS_Store*",
+            "!Thumbs.db",
+            "!./*.codekit3"
+        ])
+        .pipe(
+            replace(
+                changeCase.lowerCase(changeCase.snakeCase(config.textDomain)) +
+                    "_",
+                changeCase.lowerCase(changeCase.snakeCase(params.name)) + "_"
+            )
+        )
+        .pipe(
+            replace(
+                changeCase.upperCase(changeCase.snakeCase(config.textDomain)) +
+                    "_",
+                changeCase.upperCase(changeCase.snakeCase(params.name)) + "_"
+            )
+        )
+        .pipe(
+            replace(
+                changeCase.lowerCase(changeCase.paramCase(config.textDomain)) +
+                    "-",
+                changeCase.lowerCase(changeCase.paramCase(params.name)) + "-"
+            )
+        )
+        .pipe(
+            replace(
+                changeCase.lowerCase(changeCase.snakeCase(config.textDomain)) +
+                    ".",
+                changeCase.lowerCase(changeCase.snakeCase(params.name)) + "."
+            )
+        )
+        .pipe(
+            replace(
+                changeCase.lowerCase(changeCase.snakeCase(config.textDomain)) +
+                    " ",
+                changeCase.lowerCase(changeCase.snakeCase(params.name)) + " "
+            )
+        )
+        .pipe(
+            replace(
+                "'" + config.textDomain + "'",
+                "'" + changeCase.paramCase(params.name) + "'"
+            )
+        )
+        .pipe(
+            replace(
+                '"' + config.textDomain + '"',
+                '"' + changeCase.paramCase(params.name) + '"'
+            )
+        )
+        .pipe(
+            replace(
+                "/" + config.textDomain + "/",
+                "/" + changeCase.paramCase(params.name) + "/"
+            )
+        )
+        .pipe(
+            replace(
+                changeCase.titleCase(
+                    changeCase.sentenceCase(config.textDomain)
+                ),
+                changeCase.titleCase(changeCase.sentenceCase(params.name))
+            )
+        )
+        .pipe(zip(changeCase.paramCase(params.name) + ".zip"))
+        .pipe(gulp.dest("./../"))
+        .pipe(
+            notify({
+                message: "\n\n✅  ===> STARTER ZIP — completed!\n",
+                onLast: true
+            })
+        );
 });
 
 /**
@@ -794,19 +776,16 @@ gulp.task("starter", () => {
  *
  */
 gulp.task("files-js", () => {
+    var files = gulp
+        .src(["node_modules/bootstrap/dist/js/bootstrap.js"])
+        .pipe(gulp.dest(config.jsVendorFolder));
 
-	var files = gulp
-		.src([
-			"node_modules/bootstrap/dist/js/bootstrap.js",
-		])
-		.pipe(gulp.dest(config.jsVendorFolder));
-
-	return merge(files).pipe(
-		notify({
-			message: "\n\n✅  ===> JS FILES moved from node_modules!\n",
-			onLast: true
-		})
-	);
+    return merge(files).pipe(
+        notify({
+            message: "\n\n✅  ===> JS FILES moved from node_modules!\n",
+            onLast: true
+        })
+    );
 });
 
 /**
@@ -816,35 +795,30 @@ gulp.task("files-js", () => {
  *
  */
 gulp.task("files-css", () => {
+    var bootstrap = gulp
+        .src(["node_modules/bootstrap/scss/**/*"])
+        .pipe(gulp.dest(config.styleVendorFolder + "bootstrap/"));
 
-	var bootstrap = gulp
-		.src(["node_modules/bootstrap/scss/**/*"])
-		.pipe(gulp.dest(config.styleVendorFolder + "bootstrap/"));
+    var fontawesome = gulp
+        .src([
+            "node_modules/@fortawesome/fontawesome-free/{webfonts,webfonts/*}",
+            "node_modules/@fortawesome/fontawesome-free/{scss,scss/*}"
+        ])
+        .pipe(gulp.dest(config.styleVendorFolder + "fontawesome-free/"));
 
-	var fontawesome = gulp
-		.src([
-			"node_modules/@fortawesome/fontawesome-free/{webfonts,webfonts/*}",
-			"node_modules/@fortawesome/fontawesome-free/{scss,scss/*}"
-		])
-		.pipe(gulp.dest(config.styleVendorFolder + "fontawesome-free/"));
+    var quemalabs_font = gulp
+        .src([
+            "node_modules/quemalabs-font/{fonts,fonts/*}",
+            "node_modules/quemalabs-font/style.scss"
+        ])
+        .pipe(gulp.dest(config.styleVendorFolder + "quemalabs-font/"));
 
-	var quemalabs_font = gulp
-		.src([
-			"node_modules/quemalabs-font/{fonts,fonts/*}",
-			"node_modules/quemalabs-font/style.scss"
-		])
-		.pipe(gulp.dest(config.styleVendorFolder + "quemalabs-font/"));
-
-	return merge(
-		bootstrap,
-		fontawesome,
-		quemalabs_font
-	).pipe(
-		notify({
-			message: "\n\n✅  ===> CSS FILES moved from node_modules!\n",
-			onLast: true
-		})
-	);
+    return merge(bootstrap, fontawesome, quemalabs_font).pipe(
+        notify({
+            message: "\n\n✅  ===> CSS FILES moved from node_modules!\n",
+            onLast: true
+        })
+    );
 });
 
 /**
@@ -870,7 +844,7 @@ gulp.task("files", gulp.parallel("files-js", "files-css"));
  *
  */
 gulp.task("clean", () => {
-	return del("dist/**", { force: true });
+    return del("dist/**", { force: true });
 });
 
 /**
@@ -879,19 +853,19 @@ gulp.task("clean", () => {
  *	Prepare all to publish the Theme and creates a ZIP file
  */
 gulp.task(
-	"build",
-	gulp.series(
-		"adminStyles",
-		"editorStyles",
-		"stylesBuild",
-		"vendorsJS",
-		"customJS",
-		"images",
-		"translate",
-		"stylesRTL",
-		"readmeMarkdown",
-		"moveFiles",
-		"zip",
-		"clean"
-	)
+    "build",
+    gulp.series(
+        "adminStyles",
+        "editorStyles",
+        "stylesBuild",
+        "vendorsJS",
+        "customJS",
+        "images",
+        "translate",
+        "stylesRTL",
+        "readmeMarkdown",
+        "moveFiles",
+        "zip",
+        "clean"
+    )
 );

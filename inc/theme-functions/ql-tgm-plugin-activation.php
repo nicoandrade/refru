@@ -41,15 +41,6 @@ function refru_register_required_plugins() {
             'force_activation'   => false,
             'force_deactivation' => false,
         ),
-        array(
-            'name'               => 'One Click Demo Import',
-            'slug'               => 'one-click-demo-import',
-            'required'           => false,
-            'version'            => '2.2.1',
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => '',
-        ),
     );
 
     /**

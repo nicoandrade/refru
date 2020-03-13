@@ -2,8 +2,48 @@
 Search
 =====================================================*/
 .search {
-    .post {
-        margin-bottom: 80px;
+    .post,
+    .page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        vertical-align: top;
+        margin: 0 0 14% 0;
+
+        .post-image {
+            display: block;
+            margin-bottom: 20px;
+            order: 0;
+        }
+
+        .entry-header {
+            width: 45%;
+            margin: 0 auto;
+            display: block;
+            margin-top: 0;
+            order: 1;
+
+            .post-title {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
+
+        .entry-content {
+            display: block;
+            order: 4;
+        }
+
+        .entry-footer {
+            display: block;
+            width: 45%;
+            margin-left: auto;
+            margin-right: auto;
+            // margin-bottom: 0.9375rem;
+            // margin-top: 0.9375rem;
+            order: 2;
+            border-top: none;
+        }
     }
 
     .entry-header {

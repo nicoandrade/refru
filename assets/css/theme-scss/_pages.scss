@@ -56,6 +56,25 @@ Page Header
         margin-left: auto;
         margin-right: auto;
     }
+
+    @at-root .search-results #{&} {
+        margin-bottom: 3.75rem;
+
+        .page-title {
+            font-size: 1.875rem;
+        }
+    }
+
+    @at-root .archive #{&} {
+        margin-bottom: 3.75rem;
+    }
+
+    // Extra Small
+    @include media-breakpoint-only(xs) {
+        & > * {
+            max-width: 85%;
+        }
+    }
 }
 
 /*

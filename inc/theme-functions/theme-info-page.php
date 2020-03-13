@@ -23,7 +23,7 @@
             <div class="theme-content-wrap">
                 <h4><?php esc_html_e( 'Getting Started', 'refru' ); ?></h4>
                 <h2 class="theme-name"><?php echo esc_html( REFRU_THEME_NAME ); ?> <span
-                        class="ver"><?php echo 'v' . esc_html( REFRU_THEME_VERSION ); ?></span></h2>
+                        class="ver"><?php esc_html_e( 'v', 'refru' ) . esc_html( REFRU_THEME_VERSION ); ?></span></h2>
                 <p><?php echo sprintf( esc_html__( 'Thanks for using %s, we appriciate that you create with our products.', 'refru' ), esc_html( REFRU_THEME_NAME ) ); ?>
                 </p>
                 <p><?php esc_html_e( 'Check the content below to get started with our theme.', 'refru' ); ?></p>

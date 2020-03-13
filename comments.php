@@ -27,25 +27,25 @@
     <?php if ( have_comments() ): ?>
     <h2 class="comments-title">
         <?php
-                $comments_number = get_comments_number();
-                if ( '1' === $comments_number ) {
-                    /* translators: %s: post title */
-                    printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'refru' ), get_the_title() );
-                } else {
-                    printf(
-                        /* translators: 1: number of comments, 2: post title */
-                        esc_html( _nx(
-                            '%1$s Reply to &ldquo;%2$s&rdquo;',
-                            '%1$s Replies to &ldquo;%2$s&rdquo;',
-                            $comments_number,
-                            'comments title',
-                            'refru'
-                        ) ),
-                        esc_html( number_format_i18n( $comments_number ) ),
-                        get_the_title()
-                    );
-                }
-            ?>
+            $comments_number = get_comments_number();
+            if ( '1' === $comments_number ) {
+                /* translators: %s: post title */
+                printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'refru' ), get_the_title() );
+            } else {
+                printf(
+                    /* translators: 1: number of comments, 2: post title */
+                    esc_html( _nx(
+                        '%1$s Reply to &ldquo;%2$s&rdquo;',
+                        '%1$s Replies to &ldquo;%2$s&rdquo;',
+                        $comments_number,
+                        'comments title',
+                        'refru'
+                    ) ),
+                    esc_html( number_format_i18n( $comments_number ) ),
+                    get_the_title()
+                );
+            }
+        ?>
     </h2>
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ): // Are there comments to navigate through? ?>
@@ -62,11 +62,11 @@
 
     <ol class="comment-list">
         <?php
-                wp_list_comments( array(
-                    'style'      => 'ol',
-                    'short_ping' => true,
-                ) );
-            ?>
+            wp_list_comments( array(
+                'style'      => 'ol',
+                'short_ping' => true,
+            ) );
+        ?>
     </ol><!-- .comment-list -->
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ): // Are there comments to navigate through? ?>
@@ -109,7 +109,7 @@
 
             'id_submit'           => 'submit-respond',
 
-            'fields'              => apply_filters( 'comment_form_default_fields', array(
+            'fields'              => apply_filters( 'refru_comment_form_default_fields', array(
 
                 'author' => '<div class="input-wrap">
 								      <label class="control-label" for="author">' . esc_html__( 'Name', 'refru' ) . '' . ( $req ? ' (*)' : '' ) . '</label>

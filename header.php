@@ -25,6 +25,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php
+        if ( function_exists( 'wp_body_open' ) ) {
+            wp_body_open();
+        } else {
+            do_action( 'wp_body_open' );
+        }
+    ?>
     <div class="refru-preloader">
         <div class="refru-spinner">
             <div class="refru-double-bounce1"></div>
@@ -32,9 +39,7 @@
         </div>
     </div>
     <?php
-        if ( is_single() ) {
-            echo '<a class="skip-link screen-reader-text" href="#content">' . esc_html__( 'Skip to content', 'refru' ) . '</a>';
-        }
+        echo '<a class="skip-link screen-reader-text" href="#content">' . esc_html__( 'Skip to content', 'refru' ) . '</a>';
     ?>
     <div class="refru-site-wrap">
 

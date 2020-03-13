@@ -15,10 +15,10 @@ function refru_dynamic_editor_styles() {
     Also nonces will not work since the nonce is created as guest user on the Editor Style.
      */
 
-    $refru_typography_font_family = get_theme_mod( 'refru_typography_font_family', 'Lato' );
-    $refru_typography_font_family_headings = get_theme_mod( 'refru_typography_font_family_headings', 'Lato' );
-    $refru_typography_font_size = get_theme_mod( 'refru_typography_font_size', 16 );
-    $refru_text_color = get_theme_mod( 'refru_text_color', '#484848' );
+    $refru_typography_font_family = esc_attr( get_theme_mod( 'refru_typography_font_family', 'Lato' ) );
+    $refru_typography_font_family_headings = esc_attr( get_theme_mod( 'refru_typography_font_family_headings', 'Lato' ) );
+    $refru_typography_font_size = esc_attr( get_theme_mod( 'refru_typography_font_size', 16 ) );
+    $refru_text_color = esc_attr( get_theme_mod( 'refru_text_color', '#484848' ) );
 
     $headings_classes = refru_headings_font_classes();
 
