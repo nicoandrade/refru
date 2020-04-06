@@ -24,6 +24,9 @@ Refru is a fast WooCommerce storefront, ideal for create a creative shop online 
 
 == Changelog ==
 
+= 1.0.13 - Developing... =
+* Improved: Page title for Product Category
+
 = 1.0.12 - 13/03/2020 =
 * Changed: The Post pagination function
 * Removed: Unused functions

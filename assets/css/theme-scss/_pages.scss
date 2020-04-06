@@ -55,6 +55,10 @@ Page Header
         max-width: 45%;
         margin-left: auto;
         margin-right: auto;
+
+        @at-root .tax-product_cat #{&} {
+            max-width: 85%;
+        }
     }
 
     @at-root .search-results #{&} {

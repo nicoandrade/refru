@@ -2,9 +2,9 @@ $ql-font-path: "assets/css/vendor/quemalabs-font/fonts" !default;
 
 @font-face {
     font-family: "quemalabs-font";
-    src: url("#{$ql-font-path}/quemalabs-font.ttf?6zw6tb") format("truetype"),
-        url("#{$ql-font-path}/quemalabs-font.woff?6zw6tb") format("woff"),
-        url("#{$ql-font-path}/quemalabs-font.svg?6zw6tb#quemalabs-font")
+    src: url("#{$ql-font-path}/quemalabs-font.ttf?wtx8hy") format("truetype"),
+        url("#{$ql-font-path}/quemalabs-font.woff?wtx8hy") format("woff"),
+        url("#{$ql-font-path}/quemalabs-font.svg?wtx8hy#quemalabs-font")
             format("svg");
     font-weight: normal;
     font-style: normal;
@@ -26,92 +26,9 @@ $ql-font-path: "assets/css/vendor/quemalabs-font/fonts" !default;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.ql-icon-cheap_2:before {
-    content: "\e91d";
-}
-.ql-icon-external_link_squared:before {
-    content: "\e91c";
-}
-.ql-icon-discount_56:before {
-    content: "\e91b";
-}
-.ql-icon-beer_pump:before {
-    content: "\e91a";
-}
-.ql-icon-shopping_cart_loaded:before {
-    content: "\e918";
-}
-.ql-icon-shopping_cart:before {
-    content: "\e919";
-}
-.ql-icon-overview_pages_1:before {
-    content: "\e917";
-}
-.ql-icon-help:before {
-    content: "\e915";
-}
-.ql-icon-info:before {
-    content: "\e916";
-}
-.ql-icon-no_credit_cards:before {
-    content: "\e90d";
-}
-.ql-icon-bank_card_front_side:before {
-    content: "\e90e";
-}
-.ql-icon-card_verification_value:before {
-    content: "\e90f";
-}
-.ql-icon-discover:before {
-    content: "\e910";
-}
-.ql-icon-visa:before {
-    content: "\e911";
-}
-.ql-icon-diners_club:before {
-    content: "\e912";
-}
-.ql-icon-am_ex:before {
-    content: "\e913";
-}
-.ql-icon-mastercard:before {
-    content: "\e914";
-}
-.ql-icon-icons8-print:before {
-    content: "\e90c";
-}
-.ql-icon-icons8-paycheque:before {
-    content: "\e90b";
-}
-.ql-icon-settings:before {
-    content: "\e901";
-}
-.ql-icon-user_male_circle:before {
-    content: "\e902";
-}
-.ql-icon-combo_chart:before {
-    content: "\e903";
-}
-.ql-icon-home:before {
-    content: "\e904";
-}
-.ql-icon-edit_property:before {
-    content: "\e905";
-}
-.ql-icon-beer_keg:before {
-    content: "\e906";
-}
-.ql-icon-truck:before {
-    content: "\e907";
-}
-.ql-icon-move_by_trolley:before {
-    content: "\e908";
-}
-.ql-icon-beer_glass:before {
-    content: "\e909";
-}
-.ql-icon-small_business:before {
-    content: "\e90a";
+.ql-icon-table:before {
+    content: "\e91e";
+    color: #6c757d;
 }
 .ql-icon-home5:before {
     content: "\e604";
@@ -265,4 +182,91 @@ $ql-font-path: "assets/css/vendor/quemalabs-font/fonts" !default;
 }
 .ql-icon-text-size:before {
     content: "\e9a2";
+}
+.ql-icon-cheap_2:before {
+    content: "\e91d";
+}
+.ql-icon-external_link_squared:before {
+    content: "\e91c";
+}
+.ql-icon-discount_56:before {
+    content: "\e91b";
+}
+.ql-icon-beer_pump:before {
+    content: "\e91a";
+}
+.ql-icon-shopping_cart_loaded:before {
+    content: "\e918";
+}
+.ql-icon-shopping_cart:before {
+    content: "\e919";
+}
+.ql-icon-overview_pages_1:before {
+    content: "\e917";
+}
+.ql-icon-help:before {
+    content: "\e915";
+}
+.ql-icon-info:before {
+    content: "\e916";
+}
+.ql-icon-no_credit_cards:before {
+    content: "\e90d";
+}
+.ql-icon-bank_card_front_side:before {
+    content: "\e90e";
+}
+.ql-icon-card_verification_value:before {
+    content: "\e90f";
+}
+.ql-icon-discover:before {
+    content: "\e910";
+}
+.ql-icon-visa:before {
+    content: "\e911";
+}
+.ql-icon-diners_club:before {
+    content: "\e912";
+}
+.ql-icon-am_ex:before {
+    content: "\e913";
+}
+.ql-icon-mastercard:before {
+    content: "\e914";
+}
+.ql-icon-icons8-print:before {
+    content: "\e90c";
+}
+.ql-icon-icons8-paycheque:before {
+    content: "\e90b";
+}
+.ql-icon-settings:before {
+    content: "\e901";
+}
+.ql-icon-user_male_circle:before {
+    content: "\e902";
+}
+.ql-icon-combo_chart:before {
+    content: "\e903";
+}
+.ql-icon-home:before {
+    content: "\e904";
+}
+.ql-icon-edit_property:before {
+    content: "\e905";
+}
+.ql-icon-beer_keg:before {
+    content: "\e906";
+}
+.ql-icon-truck:before {
+    content: "\e907";
+}
+.ql-icon-move_by_trolley:before {
+    content: "\e908";
+}
+.ql-icon-beer_glass:before {
+    content: "\e909";
+}
+.ql-icon-small_business:before {
+    content: "\e90a";
 }

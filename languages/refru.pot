@@ -30,14 +30,6 @@ msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr ""
 
-#. translators: 1: number of comments, 2: post title
-#: comments.php:37
-msgctxt "comments title"
-msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
 #: comments.php:53, comments.php:74
 msgid "Comment navigation"
 msgstr ""
@@ -319,14 +311,6 @@ msgstr ""
 msgid "Ready to publish your first post? %1$s Get started here %2$s."
 msgstr ""
 
-#: template-parts/content-none.php:25
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:31
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
 #: template-parts/content-page.php:31, template-parts/content-search.php:43, template-parts/content-single.php:41, template-parts/content.php:36
 msgid "Pages:"
 msgstr ""
@@ -447,11 +431,9 @@ msgstr ""
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:388, inc/theme-functions/class-tgm-plugin-activation.php:2952
+#: inc/theme-functions/class-tgm-plugin-activation.php:388
 msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #. translators: 1: plugin name.
 #: inc/theme-functions/class-tgm-plugin-activation.php:390
@@ -488,23 +470,6 @@ msgstr ""
 msgid "Update Required"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:934
-msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:934, inc/theme-functions/class-tgm-plugin-activation.php:937
-msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:937
-msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:1121, inc/theme-functions/class-tgm-plugin-activation.php:2948
-msgctxt "plugin A *and* plugin B"
-msgid "and"
-msgstr ""
-
 #. translators: %s: version number
 #: inc/theme-functions/class-tgm-plugin-activation.php:1982
 msgid "TGMPA v%s"
@@ -538,20 +503,8 @@ msgstr ""
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2321
-msgid "Active"
-msgstr ""
-
 #: inc/theme-functions/class-tgm-plugin-activation.php:2327
 msgid "Required Update not Available"
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:2330
-msgid "Requires Update"
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:2333
-msgid "Update recommended"
 msgstr ""
 
 #. translators: 1: install status, 2: update status
@@ -588,11 +541,6 @@ msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:2482
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
-msgstr ""
 
 #: inc/theme-functions/class-tgm-plugin-activation.php:2490
 msgid "Installed version:"
@@ -635,16 +583,6 @@ msgstr ""
 msgid "Install %2$s"
 msgstr ""
 
-#. translators: %2$s: plugin name in screen reader markup
-#: inc/theme-functions/class-tgm-plugin-activation.php:2608
-msgid "Update %2$s"
-msgstr ""
-
-#. translators: %2$s: plugin name in screen reader markup
-#: inc/theme-functions/class-tgm-plugin-activation.php:2614
-msgid "Activate %2$s"
-msgstr ""
-
 #: inc/theme-functions/class-tgm-plugin-activation.php:2684
 msgid "Upgrade message from the plugin author:"
 msgstr ""
@@ -665,16 +603,8 @@ msgstr ""
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
-#: inc/theme-functions/class-tgm-plugin-activation.php:2759
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-
 #: inc/theme-functions/class-tgm-plugin-activation.php:2800
 msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:2802
-msgid "No plugins are available to be updated at this time."
 msgstr ""
 
 #: inc/theme-functions/class-tgm-plugin-activation.php:2908
@@ -692,60 +622,6 @@ msgstr ""
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/theme-functions/class-tgm-plugin-activation.php:3498
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#. translators: 1: plugin name, 2: error message.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3501
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3503
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:3507
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3509
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:3509, inc/theme-functions/class-tgm-plugin-activation.php:3517
-msgid "Show Details"
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:3509, inc/theme-functions/class-tgm-plugin-activation.php:3517
-msgid "Hide Details"
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:3510
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3512
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:3515
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3517
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: inc/theme-functions/class-tgm-plugin-activation.php:3518
-msgid "All installations have been completed."
-msgstr ""
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/theme-functions/class-tgm-plugin-activation.php:3520
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/theme-functions/retina-logo.php:103
